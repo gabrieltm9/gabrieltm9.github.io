@@ -18,46 +18,45 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://tianqi.name
-baseurl : /jekyll-TeXt-theme
-title   : TeXt Theme
+url     : https://gmoncau.com
+baseurl : /
+title   : Gabriel Moncau
 description: >
-  A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.
+  A portfolio site for hobby projects, professional work, published media, and more.
 
 
 ## => Language and Timezone
 ##############################
 lang: en # the language of your site, default as "en"
-timezone: Asia/Shanghai
+timezone: America/New_York
 
 
 ## => Author and Social
 ##############################
 author:
-  type      : organization # "person" (default), "organization"
-  name      : TeXt
+  type      : person # "person" (default), "organization"
+  name      : Gabriel Moncau
   url       :
-  avatar    : /assets/apple-touch-icon.png
+  avatar    : /assets/images/gtm9/gtm9.jpg
   bio: >
-    TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.
-    Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
-  email     : kitian616@outlook.com
+    Brazilian tech-enthusiast, aspiring program manager, and BU student.
+  email     : gmoncau@bu.edu
   facebook  :
-  twitter   : kitian616
-  weibo     : 234695683
-  googleplus: 101827554735084402671
+  twitter   : 
+  weibo     : 
+  googleplus: 
   telegram  :
   medium    :
   zhihu     :
   douban    :
-  linkedin  :
-  github    : kitian616/jekyll-TeXt-theme
+  linkedin  : gmoncau
+  github    : gabrieltm9
   npm       :
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: kitian616/jekyll-TeXt-theme
+repository: gabrieltm9/gabrieltm9.github.io
 repository_tree: master
 
 
@@ -65,7 +64,7 @@ repository_tree: master
 ##############################
 paths:
   root    : # title link url, "/" (default)
-  home    : /test/ # home layout url, "/" (default)
+  home    : # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
@@ -76,7 +75,7 @@ paths:
 excerpt_separator: <!--more-->
 
 ## license
-license: CC-BY-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+license: CC-BY-ND-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
 
 ## TOC
 toc:
@@ -104,7 +103,7 @@ paginate_path: /test/page:num # don't change this unless for special need
 
 ## => Sources
 ##############################
-sources: # bootcdn (default), unpkg
+sources: unpkg # bootcdn (default), unpkg
 
 
 ## => Sharing
