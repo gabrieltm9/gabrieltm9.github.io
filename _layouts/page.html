@@ -157,7 +157,8 @@ layout: base
                           {%- include snippets/get-nav-url.html path=_action.url -%}
                           {%- assign _url = __return -%}
                           {%- assign _type = _action.type | default: 'info' -%}
-                          <li><a class="button button--{{ _type }} button--rounded button--xl" href="{{ _url }}">{{ _action.text }}</a></li>
+                          {%- assign _bsize = _action.bsize | default: 'xl' -%}
+                          <li><a class="button button--{{ _type }} button--rounded button--{{ _bsize }}" href="{{ _url }}">{{ _action.text }}</a></li>
                         {%- endfor -%}
                       </ul>
                     {%- endif -%}

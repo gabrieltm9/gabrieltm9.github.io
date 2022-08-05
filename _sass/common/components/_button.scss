@@ -161,3 +161,12 @@
     height: map-get($button, circle-diameter-xl);
   }
 }
+
+.button--xxl {
+  padding: map-get($button, padding-y-xxl) map-get($button, padding-x-xxl);
+  font-size: map-get($base, font-size-xxl);
+  &.button--circle {
+    width: map-get($button, circle-diameter-xxl);
+    height: map-get($button, circle-diameter-xxl);
+  }
+}
