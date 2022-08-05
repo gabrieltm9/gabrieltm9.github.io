@@ -337,6 +337,7 @@ img {
 
 .skills__img {
   border-radius: .5rem;
+  box-shadow: 0px 3px 20px rgba(14, 36, 49, 0.15);
 }
 
 /* ===== WORK =====*/
@@ -420,6 +421,7 @@ img {
   }
   .home__img {
     width: 200px;
+    box-shadow: 0px 3px 20px rgba(14, 36, 49, 0.15);
   }
 }
 
@@ -508,6 +510,7 @@ img {
     padding-top: 2rem;
   }
   .about__img img {
+    box-shadow: 0px 3px 20px rgba(14, 36, 49, 0.15);
     width: 300px;
   }
   .skills__container {
