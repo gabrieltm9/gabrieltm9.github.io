@@ -346,12 +346,18 @@ img {
 
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: .5rem;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work__img img {
   transition: 1s;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
 }
 
 .work__img img:hover {
