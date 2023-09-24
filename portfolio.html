@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <!-- =====BOX ICONS===== -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -17,11 +18,13 @@
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
+            <a href="/" class="nav__home"> <i class="fa-solid fa-house"></i>
+                Home</a>
             <div>
                 <a href="/" class="nav__logo">Gabriel Moncau</a>
             </div>
 
-            <div class="nav__menu" id="nav-menu">
+            <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="/#about" class="nav__link">About</a></li>
@@ -30,7 +33,6 @@
                     <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
-
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
@@ -38,24 +40,46 @@
     </header>
 
     <!--===== LEFT MENU =====-->
-    <div class="menu">
-        <ul id="menu-list" style="padding-top: 70px;">
-            <li><a href="#section1">Application Development</a></li>
-            <li><a href="#section2">Game Development</a></li>
-            <li><a href="#section3">Product Decks</a></li>
-            <li><a href="#section4">Marketing Executions</a></li>
-            <li><a href="#section5">Podcast Hosting</a></li>
-            <li><a href="#section6">Video Production</a></li>
-            <li><a href="#section7">Event Production</a></li>
-            <!-- Add more menu items as needed -->
-        </ul>
+    <div class=" nav">
+        <div class="menu" id="nav-menu">
+            <ul id="menu-list" style="padding-top: 70px;">
+                <li><a href="#appdev" class="active">
+                        <i class="fa-brands fa-app-store"></i>></i>
+                        Application Development
+                    </a></li>
+                <li><a href="#gamedev">
+                        <i class="fa-brands fa-unity"></i>></i>
+                        Game Development
+                    </a></li>
+                <li><a href="#productdev">
+                        <i class="fa-regular fa-file-powerpoint"></i>></i>
+                        Product Development
+                    </a></li>
+                <li><a href="#marketing">
+                        <i class="fa-solid fa-chart-line"></i>></i>
+                        Marketing Executions
+                    </a></li>
+                <li><a href="#podcasts">
+                        <i class="fa-solid fa-podcast"></i>></i>
+                        Podcast Hosting
+                    </a></li>
+                <li><a href="#videos">
+                        <i class="fa-brands fa-youtube"></i>></i>
+                        Video Production
+                    </a></li>
+                <li><a href="#events">
+                        <i class="fa-regular fa-calendar-xmark"></i>></i>
+                        Event Production
+                    </a></li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </div>
     </div>
 
     <main class="content">
         <!--===== WORK =====-->
         <section class="work section" id="work">
             <h2 class="section-title">Work</h2>
-
             <div class="work__container bd-grid">
                 <a href="" class="work__img">
                     <img src="assets/img/work/Hotspot.jpg" alt="">
@@ -80,7 +104,8 @@
     </main>
 
     <!--===== PORTFOLIO JS =====-->
-    <script src=" assets/js/portfolio.js"></script>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+                    <script src=" assets/js/portfolio.js"></script>
 </body>
 
 </html>
