@@ -1,205 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Gabriel Moncau</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Gabriel Moncau</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Gabriel Moncau</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
                 <div>
-                    <a href="#" class="nav__logo">Gabriel Moncau</a>
+                    <h1 class="home__title" style="margin-bottom: 0;">Hi! I'm<br>
+                        <span class="home__title-color">Gabriel Moncau</span><br>
+                    </h1>
+                    <h3 style="margin-top: 0; margin-bottom: 2.5rem">Product Manager | Programmer | Tech Enthusiast</h3>
+                </div>
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/gmoncau/" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/gabrieltm9" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://discordapp.com/users/186163297349795840" class="home__social-icon"><i
+                        class='bx bxl-discord'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <image class="home__blob-img" x="30" y="-90" style="width:500px;height:630px;"
+                        href="assets/img/blob3.png" />
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/me-blue.png" style="width:355px; height:375px; margin-top: 20px;" alt="">
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
+                <div>
+                    <h2 class="about__subtitle">Hey all!</h2>
+                    <p class="about__text">I am a trilingual Brazilian studying in the U.S stupidly passionate about the
+                        intersection between business and technology. Over the years I’ve poured time into Unity3D game
+                        design projects, robotics competitions, podcast creation, collegiate esports, broadcast
+                        production, video editing, software development, digital marketing, server hosting, and many
+                        more projects.
+                        <br><br>Im currently at Boston University pursuing a 5-year dual major in <b>Business
+                            Administration</b> and <b>Psychology</b>, with concentrations in Information Systems,
+                        Entrepreneurship, Marketing, and a minor in <b>Computer Science</b>. In the future I'm looking
+                        forward to studying abroad in Sydney and Milan, working with Questrom's IT department, and
+                        continuing to grow as a person, student, and professional. Im hungry to learn, not afraid to
+                        fail, and try to seize every opportunity life throws at me.
+                    </p>
                 </div>
+            </div>
+        </section>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <div>
-                        <h1 class="home__title" style="margin-bottom: 0;">Hi! I'm<br>
-                            <span class="home__title-color">Gabriel Moncau</span><br>
-                        </h1>
-                        <h3 style="margin-top: 0; margin-bottom: 2.5rem">Product Manager | Programmer | Tech Enthusiast</h3>
-                    </div>
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/gmoncau/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/gabrieltm9" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://discordapp.com/users/186163297349795840" class="home__social-icon"><i class='bx bxl-discord' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <image class="home__blob-img" x="30" y="-90" style="width:500px;height:630px;" href="assets/img/blob3.png"/>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/me-blue.png" style="width:355px; height:375px; margin-top: 20px;" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Hey all!</h2>
-                        <p class="about__text">I am a trilingual Brazilian studying in the U.S stupidly passionate about the intersection between business and technology. Over the years I’ve poured time into Unity3D game design projects, robotics competitions, podcast creation, collegiate esports, broadcast production, video editing, software development, digital marketing, server hosting, and many more projects.
-                        <br><br>Im currently at Boston University pursuing a 5-year dual major in <b>Business Administration</b> and <b>Psychology</b>, with concentrations in Information Systems, Entrepreneurship, Marketing, and a minor in <b>Computer Science</b>. In the future I'm looking forward to studying abroad in Sydney and Milan, working with Questrom's IT department, and continuing to grow as a person, student, and professional. Im hungry to learn, not afraid to fail, and try to seize every opportunity life throws at me.
-                            </p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Experience in the internsection between business and technology. Profficient in Java, C#, Python, and HTML/CSS.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-cog skills__icon'></i>
-                                <span class="skills__name">Product Management</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text">Experience in the internsection between business and technology. Profficient
+                        in Java, C#, Python, and HTML/CSS.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-cog skills__icon'></i>
+                            <span class="skills__name">Product Management</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-slideshow skills__icon'></i>
-                                <span class="skills__name">Digital Marketing</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
+                        <div class="skills__bar skills__html">
+
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-unity skills__icon' ></i>
-                                <span class="skills__name">Unity3D</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-data skills__icon'></i>
-                                <span class="skills__name">Information Technology</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
                         </div>
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/gtm9_wide.jpg" alt="" class="skills__img">
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-slideshow skills__icon'></i>
+                            <span class="skills__name">Digital Marketing</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-unity skills__icon'></i>
+                            <span class="skills__name">Unity3D</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-data skills__icon'></i>
+                            <span class="skills__name">Information Technology</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
                     </div>
                 </div>
-            </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <div>
+                    <img src="assets/img/gtm9_wide.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work/Hotspot.jpg" alt="">
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <a href="portfolio.html" class="button__center" style="font-size: x-large;">Portfolio</a>
+
+            <div class="work__container bd-grid">
+                <a href="" class="work__img">
+                    <img src="assets/img/work/Hotspot.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work/Bhacks.jpg"" alt="">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work/Bhacks.jpg"" alt="">
+                    <a href="" class=" work__img">
+                    <img src="assets/img/work/Something.jpg"" alt="">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work/Something.jpg"" alt="">
+                    <a href="" class=" work__img">
+                    <img src="assets/img/work/TEDx.jpg"" alt="">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work/TEDx.jpg"" alt="">
+                    <a href="" class=" work__img">
+                    <img src="assets/img/work/Showstopper.jpg"" alt="">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work/Showstopper.jpg"" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work/TSA.png"" alt="">
+                    <a href="" class=" work__img">
+                    <img src="assets/img/work/TSA.png"" alt="">
                     </a>
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+            <section class=" contact section" id="contact">
+                    <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
+                    <div class="contact__container bd-grid">
+                        <form action="" class="contact__form">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                            <input type="button" value="Enviar" class="contact__button button">
+                        </form>
+                    </div>
+        </section>
+    </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Gabriel Moncau</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; Base template by Marlon - Bedimcode. All rigths reserved</p>
-        </footer>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Gabriel Moncau</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Base template by Marlon - Bedimcode. All rigths reserved</p>
+    </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
