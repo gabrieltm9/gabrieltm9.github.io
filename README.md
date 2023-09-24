@@ -1,2 +1,2 @@
 # gmoncau.com
-The repo for my portfolio website
+The repo for my portfolio website.
