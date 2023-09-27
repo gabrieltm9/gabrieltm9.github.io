@@ -610,7 +610,7 @@ img {
   z-index: 1000;
 }
 
-/* Projects Page */
+/* Portfolio Page */
 @media screen and (max-width: 767px) {
   .menu {
     right: -120%;

@@ -1,0 +1,11 @@
+{
+    "name": "Something",
+    "date": "5/2021",
+    "description": "Co-founded ad-based charity startup with UT Austin entrepreneurs. Prototyped and implemented full stack React/Express platform, built PostgreSQL database, and deployed on Azure servers.",
+    "images": [
+        "https://media.licdn.com/dms/image/C4D2DAQGIxr_8mVREYQ/profile-treasury-image-shrink_800_800/0/1659630217851?e=1696345200&v=beta&t=-Y-Ud7D0GxyiIotsHA4qh9RUzsWH-EcxJa5wwpMYurc",
+        "https://media.licdn.com/dms/image/C4D2DAQFEdR1eiIsfsQ/profile-treasury-image-shrink_800_800/0/1659630198418?e=1696345200&v=beta&t=4wcsYeTuiF7pAftLu54KuTrk60cD89k40Xe-_OUVI4g",
+        "https://media.licdn.com/dms/image/C4D2DAQH3uzTy47ueog/profile-treasury-image-shrink_800_800/0/1659630081485?e=1696345200&v=beta&t=a4kzypGjoEU2YyjGEywhjSJJHmQj-2deDVIB9h1x6F0",
+        "https://media.licdn.com/dms/image/C4D2DAQEsDnnpO_qxMQ/profile-treasury-image-shrink_800_800/0/1659629994341?e=1696345200&v=beta&t=OwcWjAWMYuWGEs0fqY_UQYqKWdHsQ00nb8wK99y7xvc"
+    ]
+}
