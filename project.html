@@ -18,17 +18,22 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Gabriel Moncau</a>
+                <a href="/" class="nav__logo">Gabriel Moncau</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
+                <div style="display: flex; justify-content: space-between; height: 100%;">
+                    <div class="menu__outdiv" id="outdiv"></div>
+                    <div class="nav__bg">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="/" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="/#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="/#skills" class="nav__link">Skills</a></li>
+                            <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                            <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -38,41 +43,43 @@
     </header>
 
     <main class="l-main">
-        <section class="home bd-grid" id="home">
+        <section class="project bd-grid">
             <div class="home__data" style="margin-top: 80px;">
-                <div style="height: 180px; display: flex; justify-content: space-between;">
+                <div class="proj__div">
                     <div style="flex: 1;">
-                        <h1 class="home__title" style="margin-bottom: 0; font-size: 20px; padding-bottom: 10px">Month
+                        <h1 class="proj__date">Month
                             Year - Month Year<br>
-                            <span class="home__title-color" style="font-size: 60px; padding-top: 10px">Project
+                            <span class="proj__title">Project
                                 Name</span><br>
                         </h1>
-                        <h3 style="margin-top: 0; margin-bottom: 2.5rem">Project Category</h3>
+                        <h3 class="proj__subtitle">Project Category</h3>
                     </div>
-                    <div
-                        style="flex: 1; background-image: url(/assets/img/gtm9_wide.jpg); background-size: cover; background-position: center; border-radius: 10px;">
+                    <div class="proj__img" style="background-image: url(/assets/img/gtm9_wide.jpg);">
                     </div>
                 </div>
 
-                <div style="margin-top: 35px;">
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum lectus. Sed faucibus
-                        libero ligula, at luctus ipsum sollicitudin sit amet. Nulla tortor nibh, elementum in
-                        pellentesque vitae, mattis vel orci. Praesent tempor dictum pellentesque. Suspendisse consequat
-                        aliquam mauris at sollicitudin. Aenean vel urna nisi. In rhoncus eu justo eu dictum. Nunc
-                        ultrices, lacus eget blandit ultricies, velit risus sodales nisi, id fermentum ligula diam
-                        tristique dolor. Ut lacus est, malesuada vitae sodales at, consequat quis ligula. Donec at
-                        suscipit dui. Nulla facilisi. Praesent fringilla vitae nisi at auctor. Nullam enim sem, semper
-                        non turpis vitae, rutrum ornare odio. Praesent hendrerit diam in finibus tempor. Donec finibus
-                        tempus lorem, vel mollis massa semper nec. Nullam lacinia arcu sed mauris congue convallis id in
-                        ante.</h4>
-                </div>
+                <div class="proj__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dictum lectus.
+                    Sed faucibus
+                    libero ligula, at luctus ipsum sollicitudin sit amet. Nulla tortor nibh, elementum in
+                    pellentesque vitae, mattis vel orci. Praesent tempor dictum pellentesque. Suspendisse
+                    consequat
+                    aliquam mauris at sollicitudin. Aenean vel urna nisi. In rhoncus eu justo eu dictum. Nunc
+                    ultrices, lacus eget blandit ultricies, velit risus sodales nisi, id fermentum ligula diam
+                    tristique dolor. Ut lacus est, malesuada vitae sodales at, consequat quis ligula. Donec at
+                    suscipit dui. Nulla facilisi. Praesent fringilla vitae nisi at auctor. Nullam enim sem,
+                    semper
+                    non turpis vitae, rutrum ornare odio. Praesent hendrerit diam in finibus tempor. Donec
+                    finibus
+                    tempus lorem, vel mollis massa semper nec. Nullam lacinia arcu sed mauris congue convallis
+                    id in
+                    ante.</div>
             </div>
 
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/gmoncau/" class="home__social-icon"><i
+            <div class="proj__social">
+                <a href="https://www.linkedin.com/in/gmoncau/" class="proj__social-icon"><i
                         class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/gabrieltm9" class="home__social-icon"><i class='bx bxl-github'></i></a>
-                <a href="https://discordapp.com/users/186163297349795840" class="home__social-icon"><i
+                <a href="https://github.com/gabrieltm9" class="proj__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://discordapp.com/users/186163297349795840" class="proj__social-icon"><i
                         class='bx bxl-discord'></i></a>
             </div>
         </section>
