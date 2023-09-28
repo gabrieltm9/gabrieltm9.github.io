@@ -24,6 +24,12 @@ var fadeSpeed = 120 //ms lower is faster
 //     });
 // });
 
+/* OutDiv Close Menu*/
+const outdiv = document.getElementById("outdiv")
+outdiv.onclick = function () {
+    document.getElementById("nav-menu").classList.toggle('show')
+};
+
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
