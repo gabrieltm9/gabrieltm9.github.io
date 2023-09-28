@@ -651,12 +651,13 @@ img {
   outline-width: 1px;
   outline-color: white;
   outline-style: solid;
-  background-color: transparent;
   text-align: left;
+  box-shadow: inset 0 0 0 0 "transparent";
 }
 
 .menu a.active {
-  background-color: #4473ebe6;
+  box-shadow: inset 280px 0 0 0 #4473ebe6;
+  transition: 0.4s ease;
 }
 
 .menu a.active::after {

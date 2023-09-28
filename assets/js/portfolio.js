@@ -1,28 +1,28 @@
 const menuItems = document.querySelectorAll("#menu-list li a");
 var fadeSpeed = 120 //ms lower is faster
 
-menuItems.forEach((item) => {
-    item.addEventListener("click", (event) => {
-        // Remove the "active" class from all items
-        menuItems.forEach((menuItem) => {
-            menuItem.animate({
-                backgroundColor: "transparent"
-            }, fadeSpeed);
-            setTimeout(function () {
-                menuItem.classList.remove("active");
-            }, fadeSpeed * 0.85);
-        });
+// menuItems.forEach((item) => {
+//     item.addEventListener("click", (event) => {
+//         // Remove the "active" class from all items
+//         menuItems.forEach((menuItem) => {
+//             menuItem.animate({
+//                 backgroundColor: "transparent"
+//             }, fadeSpeed);
+//             setTimeout(function () {
+//                 menuItem.classList.remove("active");
+//             }, fadeSpeed * 0.85);
+//         });
 
-        //Color row background in HSL space (easier to manipulate fading)
-        event.target.animate({
-            backgroundColor: "#4473ebe6"
-        }, fadeSpeed);
-        setTimeout(function () {
-            // Add the "active" class to the clicked item
-            event.target.classList.add("active")
-        }, fadeSpeed * 0.85);
-    });
-});
+//         //Color row background in HSL space (easier to manipulate fading)
+//         event.target.animate({
+//             backgroundColor: "#4473ebe6"
+//         }, fadeSpeed);
+//         setTimeout(function () {
+//             // Add the "active" class to the clicked item
+//             event.target.classList.add("active")
+//         }, fadeSpeed * 0.85);
+//     });
+// });
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
@@ -78,9 +78,9 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2000,
-    delay: 200,
+    delay: 150,
     //     reset: true
 });
 
-sr.reveal('.section-title', {});
-sr.reveal('.work__container', {});
+sr.reveal('.section-title', { interval: 150 });
+sr.reveal('.work__img', { delay: 250, interval: 50 });
