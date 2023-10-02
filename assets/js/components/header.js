@@ -27,6 +27,11 @@ class Header extends HTMLElement {
                     </div>
                 </div>
 
+                <div class="main__flags">
+                    <img src="https://flagicons.lipis.dev/flags/4x3/br.svg" class="main__flag">
+                    <img src="https://flagicons.lipis.dev/flags/4x3/cl.svg" class="main__flag">
+                    <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" class="main__flag">
+                </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>

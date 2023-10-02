@@ -131,6 +131,18 @@ img {
   font-weight: var(--font-semi);
 }
 
+.main__flag {
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.main__flags {
+  display: none;
+  height: 50%;
+  width: 100px;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -156,6 +168,19 @@ img {
 
   .nav__list {
     padding-top: 30px;
+  }
+
+  .main__flag {
+    padding: 2px;
+    border-radius: 6px;
+  }
+
+  .main__flags {
+    display: flex;
+    position: absolute;
+    right: 46px;
+    top: 505;
+    height: 50%;
   }
 }
 
@@ -190,6 +215,7 @@ img {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+  padding-top: 5px;
 }
 
 /*Active menu*/
@@ -597,6 +623,10 @@ img {
 
   .home__img {
     width: 450px;
+  }
+
+  .main__flags {
+    display: flex;
   }
 }
 
