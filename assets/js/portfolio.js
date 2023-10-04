@@ -89,4 +89,5 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.section-title', { interval: 150 });
-sr.reveal('.work__img', { delay: 250, interval: 50 });
+sr.reveal('.work__item', { delay: 250, interval: 50 });
+sr.reveal('.work__itemsubdiv', { delay: 250, interval: 50, duration: 1600 });
