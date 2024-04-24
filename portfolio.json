@@ -1,0 +1,162 @@
+[
+    {
+        "category": "WebDev",
+        "title": "Something",
+        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs",
+        "img": "assets/img/portfolio/Something.jpg",
+        "link": "/portfolio/AppDev/Something/Something.html",
+        "year": "2022"
+    },
+    {
+        "category": "GameDev",
+        "title": "Flint",
+        "subtitle": "TSA Game 2015-2016",
+        "img": "assets/img/Work1.jpg",
+        "link": "/portfolio/WebDev/Project2/Project2.html",
+        "year": "2015"
+    },
+    {
+        "category": "GameDev",
+        "title": "DnDSim",
+        "subtitle": "A virtual tabletop for D&D 5e meant to allow playing, organizing, and creating of D&D content",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtdQj5Do5u7UMbchenW_KlulcQ72zm1gEpk5pSjqGqHg&s",
+        "link": "https://github.com/gabrieltm9/DnDSim",
+        "year": "2018"
+    },
+    {
+        "category": "GameDev",
+        "title": "The Miracle Worker",
+        "subtitle": "A psychology themed trivia game created for the Psychology AP class",
+        "img": "https://raw.githubusercontent.com/gabrieltm9/The-Miracle-Worker/master/logo.png",
+        "link": "https://github.com/gabrieltm9/The-Miracle-Worker",
+        "year": "2019"
+    },
+    {
+        "category": "Software",
+        "title": "Minecraft Stat Parser",
+        "subtitle": "Used to pull and display information from Minecraft stat .json files, notably Time Played",
+        "img": "https://images-ext-1.discordapp.net/external/N8T-1BvMgDsk6QoebaBi7yyS9F7ligs_LDtyQlQcE4M/https/opengraph.githubassets.com/da1476f9f46ca031c4627da9089be586dde51bd069154b5918ac2c1bfe9ae18a/gabrieltm9/Minecraft-Stat-Parser?format=webp",
+        "link": "https://github.com/gabrieltm9/Minecraft-Stat-Parser",
+        "year": "2020"
+    },
+    {
+        "category": "GameDev",
+        "title": "The Oasis",
+        "subtitle": "A virtual sanctuary that aims to bring live, anonymous interactions to players in the form of artistic creativity and engaging chat messages",
+        "img": "/assets/img/portfolio/Oasis.png",
+        "link": "https://devpost.com/software/the-oasis",
+        "year": "2020"
+    },
+    {
+        "category": "Software",
+        "title": "Related Rate Cars",
+        "subtitle": "A related rates car intercept simulator",
+        "img": "https://github.com/gabrieltm9/RelatedRateCars/assets/12070323/d633d5c1-2e7f-4f6e-ade3-01ac2304918d",
+        "link": "https://github.com/gabrieltm9/RelatedRateCars",
+        "year": "2019"
+    },
+    {
+        "category": "GameDev",
+        "title": "Terra Nova",
+        "subtitle": "Together we can create a new world",
+        "img": "/assets/img/portfolio/TerraNova.png",
+        "link": "https://devpost.com/software/terra-nova-8is53l",
+        "year": "2020"
+    },
+    {
+        "category": "GameDev",
+        "title": "Galactic Gauntlet Remastered",
+        "subtitle": "The PC-TSA 2016-2017 game Galactic Gauntlet remastered in 3D",
+        "img": "https://raw.githubusercontent.com/gabrieltm9/Galactic-Gauntlet-Remastered/master/GGImg.png",
+        "link": "https://github.com/gabrieltm9/Galactic-Gauntlet-Remastered",
+        "year": "2020"
+    },
+    {
+        "category": "GameDev",
+        "title": "Fringe Contender",
+        "subtitle": "PC-TSA 2017-2018 (Theme: Sports Games)",
+        "img": "/assets/img/portfolio/FC.png",
+        "link": "https://github.com/PC-TSA/GameFiles2017-2018",
+        "year": "2017"
+    },
+    {
+        "category": "GameDev",
+        "title": "Galactic Gauntlet",
+        "subtitle": "TSA Game 2016-2017 (Theme: Arcade)",
+        "img": "",
+        "link": "https://github.com/PC-TSA/GameFiles2016-2017",
+        "year": "2016"
+    },
+    {
+        "category": "Production",
+        "title": "Living Wall",
+        "subtitle": "The project files for the TSA 3D Animation 2018-2019 (Theme: Ancient Technology)",
+        "img": "",
+        "link": "https://github.com/PC-TSA/3DAnimation2018-2019",
+        "year": "2018"
+    },
+    {
+        "category": "GameDev",
+        "title": "Legacy",
+        "subtitle": "TSA Game 2017-2018 (Theme: RPG that is TSA themed)",
+        "img": "https://github.com/PC-TSA/GameFiles2018-2019/blob/master/LegacyCropped.png?raw=true",
+        "link": "https://github.com/PC-TSA/GameFiles2018-2019",
+        "year": "2017"
+    },
+    {
+        "category": "GameDev",
+        "title": "Fashion AR-App",
+        "subtitle": "TSA Fashion Design Nationals 2019: Augmented Reality App",
+        "img": "https://github.com/PC-TSA/Fashion2018-2019AR-APP/blob/master/Logo.png?raw=true",
+        "link": "https://github.com/PC-TSA/Fashion2018-2019AR-APP",
+        "year": "2019"
+    },
+    {
+        "category": "GameDev",
+        "title": "Tritonal",
+        "subtitle": "TSA Game 2019-2020 (Theme: Sporting game centered around the 2020 Olympics)",
+        "img": "",
+        "link": "https://github.com/PC-TSA/GameFiles2019-2020",
+        "year": "2019"
+    },
+    {
+        "category": "Production",
+        "title": "Anthropocene",
+        "subtitle": "TSA 3D Animation 2019-2020 (Theme: Impact of humans on the environment)",
+        "img": "",
+        "link": "https://github.com/PC-TSA/3DAnimation2019-2020",
+        "year": "2019"
+    },
+    {
+        "category": "Production",
+        "title": "Drones",
+        "subtitle": "SciVis 2019-2020",
+        "img": "",
+        "link": "https://github.com/PC-TSA/SciVis2019-2020",
+        "year": "2019"
+    },
+    {
+        "category": "Software",
+        "title": "FlutterPRM",
+        "subtitle": "A personal CRM app built with Flutter",
+        "img": "",
+        "link": "https://github.com/gabrieltm9/FlutterPRM",
+        "year": "2024"
+    },
+    {
+        "category": "Marketing",
+        "title": "RedBull Kumite 2024",
+        "subtitle": "Created campaign for esports event using data-driven analysis to raise awareness, drive registration, and strengthen brand imaging",
+        "img": "/assets/img/portfolio/Kumite.png",
+        "link": "https://media.licdn.com/dms/document/media/D562DAQFUi_AduNp3Tw/profile-treasury-document-pdf-analyzed/0/1709572245924?e=1714608000&v=beta&t=UUetv_ZgM4vepgi9OMxN013aUaNSmY6fw5HV_YdPHmM",
+        "year": "2023"
+    },
+    {
+        "category": "Marketing",
+        "title": "IBM Asset Management Summit",
+        "subtitle": "Created and pitched strategy for an IBM sustainability event aimed at raising market penetration and brand awareness during a selective cross-functional program",
+        "img": "/assets/img/portfolio/IBMSummit.png",
+        "link": "https://media.licdn.com/dms/document/media/D4D2DAQHiZey0YSpTwg/profile-treasury-document-pdf-analyzed/0/1691013905043?e=1714608000&v=beta&t=PrRc6VFDNtsxgIVqIOOXQUjQe1ml9sSORhL_MXkGYGs",
+        "year": "2023"
+    }
+]
