@@ -27,6 +27,45 @@
   /*===== z index =====*/
   --z-back: -10;
   --z-fixed: 1001;
+
+  /*===== Pure CSS Select =====*/
+  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-icon: url("https://www.svgrepo.com/show/491356/caret-down.svg");
+  --option-bg: whitesmoke;
+  --select-bg: rgba(255, 255, 255, 0.2);
+}
+
+/* <select> styles */
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  /* Personalize */
+  padding: 1rem 4rem 1rem 1rem;
+  width: 100%;
+  height: 47px;
+  background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em;
+  border-radius: var(--border-rad);
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 1rem;
+
+  /* Remove IE arrow */
+  &::-ms-expand {
+    display: none;
+  }
+
+  /* Remove focus outline */
+  &:focus {
+    outline: none;
+  }
+}
+
+/* <option> colors */
+option {
+  color: inherit;
+  background-color: var(--option-bg);
 }
 
 @media screen and (min-width: 968px) {
@@ -36,6 +75,16 @@
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
+}
+
+.fixed {
+  position: fixed;
+  /* Keep it fixed at the top */
+  top: 65px;
+  z-index: 1000;
+  /* Make sure it stays on top of other content */
+  background-color: whitesmoke;
+  /* Optional: change to match your design */
 }
 
 /*===== BASE =====*/
@@ -107,7 +156,7 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 1024px;
+  max-width: 1280px;
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -234,13 +283,17 @@ img {
 /*===== HOME =====*/
 .home {
   position: relative;
-  row-gap: 4rem;
-  padding: 4rem 0 5rem;
+  row-gap: 2rem;
+  padding: 2rem 0 5rem;
   background-color: whitesmoke;
+  grid-template-columns: 1fr 1fr;
 }
 
-.home__data {
-  align-self: center;
+.home__left, .home__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically if needed */
+  align-items: center;
 }
 
 .home__title {
@@ -249,9 +302,8 @@ img {
 }
 
 .home__subtitle {
-  margin-top: 0; 
+  margin-top: 0;
   margin-bottom: 2.5rem;
-  width: 60%;
 }
 
 .home__title-color {
@@ -260,7 +312,9 @@ img {
 
 .home__social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-self: start;
+  margin-top: 1rem;
 }
 
 .home__social-icon {
@@ -268,6 +322,7 @@ img {
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
+  margin-right: var(--mb-4);
 }
 
 .home__social-icon:hover {
@@ -275,18 +330,12 @@ img {
 }
 
 .home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 260px;
-}
-
-.home__blob {
-  fill: var(--first-color);
-}
-
-.home__blob-img {
-  width: 360px;
+  box-shadow: 0px 2px 7px 2px rgba(14, 36, 49, 0.15);
+  border-radius: var(--border-rad);
+  object-fit: cover;
+  object-position: bottom;
+  width: 75% !important;
+  height: 90%;
 }
 
 /*BUTTONS*/
@@ -458,7 +507,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   text-align: center;
   pointer-events: none;
   border-radius: var(--border-rad);
@@ -495,26 +544,42 @@ img {
 .category-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adjust as necessary for spacing */
-  justify-content: center; /* Center the buttons container */
-  margin-bottom: 20px; /* Space before the portfolio items */
+  gap: 10px;
+  /* Adjust as necessary for spacing */
+  justify-content: center;
+  /* Center the buttons container */
+  margin-bottom: 20px;
+  /* Space before the portfolio items */
 }
 
 .category-button {
   padding: 10px 20px;
   cursor: pointer;
   border: none;
-  background-color: white; /* Light gray, adjust as needed */
+  background-color: white;
+  /* Light gray, adjust as needed */
   transition: background-color 0.3s ease;
   border-radius: var(--border-rad);
 }
 
 .category-button.active {
-  background-color: #eee; 
+  background-color: #eee;
 }
 
 .category-button:hover {
   color: rgb(129, 129, 129);
+}
+
+.category-select {
+  display: none;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* Adjust as necessary for spacing */
+  justify-content: center;
+  /* Center the buttons container */
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* ===== CONTACT =====*/
@@ -569,35 +634,55 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .home {
-    row-gap: 2rem;
+    padding: 2rem 1rem 0rem;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .home__left {
+    align-items: start;
+  }
+
+  .home__right {
+    order: -1;
+    align-items: start;
+    height: min-content;
   }
 
   .home__img {
-    width: 200px;
-    box-shadow: 0px 3px 20px rgba(14, 36, 49, 0.15);
+    margin-right: 0;
+    width: 100% !important;
+    height: 25rem;
+    object-position: center;
+  }
+
+  .home__subtitle {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .home__title__break {
+    display: none;
+  }
+
+  .home__contact {
+    display: none;
+  }
+
+  .category-select {
+    display: flex;
+  }
+
+  .category-buttons {
+    display: none;
   }
 }
 
 @media screen and (min-width: 576px) {
   .home {
-    padding: 4rem 0 2rem;
-  }
-
-  .home__social {
-    flex-direction: row;
-    align-self: flex-end;
-  }
-
-  .home__social-icon {
-    margin-bottom: 0;
-    margin-right: var(--mb-4);
-  }
-
-  .home__img {
-    width: 300px;
-    bottom: 25%;
+    padding: 3rem 2rem 2rem;
   }
 
   .about__container {
@@ -629,8 +714,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    margin: 0;
+  .home {
+    padding: 4rem 2rem 2rem;
+  }
+
+  .home__img {
+    width: 80% !important;
   }
 
   .section {
@@ -669,15 +758,6 @@ img {
     color: white;
   }
 
-  .home {
-    padding: 8rem 0 2rem;
-  }
-
-  .home__img {
-    width: 400px;
-    bottom: 10%;
-  }
-
   .about__container {
     padding-top: 2rem;
   }
@@ -700,24 +780,28 @@ img {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
   }
 
   .home {
-    padding: 10rem 0 2rem;
+    padding: 4rem 0 2rem;
   }
 
-  .home__img {
-    width: 450px;
+  .home__right {
+    align-items: end;
+  }
+
+  .home__data {
+    align-self: start;
   }
 
   .main__flags {
     display: flex;
   }
-  
+
   .work__container {
     grid-template-columns: repeat(4, 1fr);
   }

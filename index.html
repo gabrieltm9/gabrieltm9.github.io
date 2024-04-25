@@ -13,7 +13,7 @@
     <title>Gabriel Moncau</title>
 </head>
 
-<body>
+<body style="background: linear-gradient(to top, #ece9e6, #ffffff);">
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -51,30 +51,22 @@
         <!--===== HOME =====-->
         <div style="background-color: whitesmoke;">
             <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <div>
-                        <h1 class="home__title" style="margin-bottom: 0;">Hi! I'm<br>
+                <div class="home__left">
+                    <div class="home__data">
+                        <h1 class="home__title" style="margin-bottom: 0;">Hi! I'm<br class="home__title__break">
                             <span class="home__title-color">Gabriel Moncau</span><br>
                         </h1>
-                        <h3 class="home__subtitle">Product Manager | Programmer | Tech Enthusiast</h3>
+                        <h3 class="home__subtitle">Product Manager | Programmer | <span style="white-space: nowrap;">Tech Enthusiast</span></h3>
+                        <a href="#contact" class="home__contact button">Contact</a>
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/gmoncau/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/gabrieltm9" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                            <a href="https://discordapp.com/users/186163297349795840" class="home__social-icon"><i class='bx bxl-discord'></i></a>
+                        </div>
                     </div>
-                    <a href="#contact" class="button">Contact</a>
                 </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/gmoncau/" class="home__social-icon"><i
-                            class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/gabrieltm9" class="home__social-icon"><i class='bx bxl-github'></i></a>
-                    <a href="https://discordapp.com/users/186163297349795840" class="home__social-icon"><i
-                            class='bx bxl-discord'></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <image class="home__blob-img" x="30" y="-45" style="width:500px; height:630px;"
-                            href="assets/img/blob3.png" />
-                    </svg>
+                <div class="home__right">
+                    <img class="home__img" src="assets/img/me.png" alt="">
                 </div>
             </section>
         </div>
@@ -93,6 +85,19 @@
                 <button class="category-button" data-category="Marketing">Marketing</button>
                 <button class="category-button" data-category="Production">Production</button>
                 <button class="category-button" data-category="Other">Other</button>
+            </div>
+
+            <div class="category-select">
+                <select id="category-select">
+                    <option selected value="All">All</option>
+                    <option value="GameDev">Game Dev</option>
+                    <option value="WebDev">Web Dev</option>
+                    <option value="Software">Software</option>
+                    <option value="Data">Data Analytics</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Production">Production</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
 
             <div class="work__container bd-grid" id="portfolio-container">

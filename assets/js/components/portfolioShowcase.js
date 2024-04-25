@@ -48,6 +48,14 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchProjects(category);
       });
     });
+
+    // Mobile
+    const mobileDropdown = document.getElementById('category-select');
+
+    mobileDropdown.addEventListener('change', function() {
+      const category = this.value;
+      fetchProjects(category);
+    });
   
     function fetchProjects(category) {
       fetch('/portfolio.json')
@@ -83,3 +91,16 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchProjects('All');
   });
   
+  /* Sticky category select */
+  document.addEventListener("DOMContentLoaded", function() {
+    const select = document.querySelector('.category-select');
+    const selectTop = select.offsetTop; // Get the initial top offset of the select
+  
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > selectTop - 40) {
+        select.classList.add('fixed');
+      } else {
+        select.classList.remove('fixed');
+      }
+    });
+  });
