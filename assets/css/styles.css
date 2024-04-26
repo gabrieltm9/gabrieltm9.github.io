@@ -582,6 +582,105 @@ img {
   margin-right: 1rem;
 }
 
+/* ===== TIMELINE =====*/
+.c-scrolling-item {
+  flex: none;
+  width: 20%;
+}
+
+.c-scrolling-line {
+  align-items: center;
+  display: flex;
+}
+
+.c-scrolling-details {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.scroll-indicator {
+  background-color: #717dff;
+  border: 2px solid #ccc;
+  width: 35px;
+  height: 35px;
+}
+
+.scroll-indicator.icon {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+}
+
+.scroll-line {
+  background-color: #ccc;
+  width: 100%;
+  height: 3px;
+}
+
+.scroll-line.last {
+  display: none;
+}
+
+.scroll-item-header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
+.scroll-details {
+  margin-bottom: 0;
+}
+
+.timeline-header {
+  color: #5f67ff;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.c-scroll-track {
+  flex: 1;
+  width: 85vw;
+  display: flex;
+}
+
+.section.expand {
+  height: 150vh;
+}
+
+.timeline-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.timeline-container.sticky {
+  max-width: none;
+  margin-bottom: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30%;
+  overflow: hidden;
+}
+
+.timeline-container.top-border {
+  border-top: 1px dashed rgba(19, 19, 19, .25);
+  display: block;
+}
+
+.c-details {
+  margin-bottom: 40px;
+}
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -654,7 +753,7 @@ img {
   .home__img {
     margin-right: 0;
     width: 100% !important;
-    height: 25rem;
+    height: 20rem;
     object-position: center;
   }
 
@@ -676,6 +775,10 @@ img {
   }
 
   .category-buttons {
+    display: none;
+  }
+
+  .timeline-container {
     display: none;
   }
 }
@@ -804,6 +907,10 @@ img {
 
   .work__container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .c-scroll-track {
+    width: 74vw;
   }
 }
 

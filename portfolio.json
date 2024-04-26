@@ -11,7 +11,7 @@
         "category": "GameDev",
         "title": "Flint",
         "subtitle": "TSA Game 2015-2016",
-        "img": "assets/img/Work1.jpg",
+        "img": "/assets/img/portfolio/Flint.png",
         "link": "/portfolio/WebDev/Project2/Project2.html",
         "year": "2015"
     },
@@ -139,7 +139,7 @@
         "category": "Software",
         "title": "FlutterPRM",
         "subtitle": "A personal CRM app built with Flutter",
-        "img": "",
+        "img": "https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png",
         "link": "https://github.com/gabrieltm9/FlutterPRM",
         "year": "2024"
     },
