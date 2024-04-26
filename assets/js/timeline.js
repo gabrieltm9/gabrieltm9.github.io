@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const stickyTop = stickyTimeline.getBoundingClientRect().top;
       const stickyBottom = stickyTimeline.getBoundingClientRect().bottom;
   
-      if (stickyTop <= window.innerHeight * 0.3 && stickyBottom > 0) {
+      if (stickyTop <= window.innerHeight * 0.305 && stickyBottom > 0) {
         // Activate sticky behavior
         if (!isStickyActive) {
           stickyTimeline.classList.add('fixed');
@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Horizontal scroll logic
         let scrollDistance = window.scrollY - sectionExpand.offsetTop;
         stickyTimeline.scrollLeft = scrollDistance;
-        console.log(stickyTimeline.scrollLeft);
       } else {
         // Deactivate sticky behavior
         if (isStickyActive) {
