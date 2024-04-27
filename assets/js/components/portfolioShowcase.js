@@ -1,16 +1,16 @@
 class PortfolioShowcase extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-        var title = this.getAttribute('title') ?? "Title";
-        var subtitle = this.getAttribute('subtitle') ?? "Subtitle";
-        var date = this.getAttribute('date') ?? "2024";
-        var img = this.getAttribute('img') ?? "/assets/img/Work1.jpg";
-        var link = this.getAttribute('link') ?? "/";
+  connectedCallback() {
+    var title = this.getAttribute('title') ?? "Title";
+    var subtitle = this.getAttribute('subtitle') ?? "Subtitle";
+    var date = this.getAttribute('date') ?? "2024";
+    var img = this.getAttribute('img') ?? "/assets/img/Work1.jpg";
+    var link = this.getAttribute('link') ?? "/";
 
-        this.innerHTML = `
+    this.innerHTML = `
         <div class="work__item">
             <div class="work__itemdiv">
                 <a href="` + link + `" class="work__img">
@@ -30,77 +30,88 @@ class PortfolioShowcase extends HTMLElement {
                 </div >
             </div >
         </div > `;
-    }
+  }
 }
 
 customElements.define('portfolio-showcase', PortfolioShowcase);
 
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.category-button');
-    const container = document.getElementById('portfolio-container');
-  
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.category-button');
+  const container = document.getElementById('portfolio-container');
 
-        const category = this.getAttribute('data-category');
-        fetchProjects(category);
-      });
-    });
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
 
-    // Mobile
-    const mobileDropdown = document.getElementById('category-select');
+      const category = this.getAttribute('data-category');
+      window.history.pushState(null, null, `?category=${category}`);
 
-    mobileDropdown.addEventListener('change', function() {
-      const category = this.value;
       fetchProjects(category);
     });
-  
-    function fetchProjects(category) {
-      fetch('/portfolio.json')
-        .then(response => response.json())
-        .then(projects => {
-          // If "All" is selected, don't filter the projects
-          const filteredProjects = category === "All" ? projects : projects.filter(project => project.category === category);
+  });
 
-          filteredProjects.sort((a, b) => new Date(b.year) - new Date(a.year));
-  
-          // Clear existing projects
-          container.innerHTML = '';
-  
-          // Add filtered projects to the container
-          filteredProjects.forEach(project => {
-            const projectElement = document.createElement('portfolio-showcase');
-            projectElement.setAttribute('title', project.title);
-            projectElement.setAttribute('subtitle', project.subtitle);
-            projectElement.setAttribute('img', project.img);
-            projectElement.setAttribute('link', project.link);
-            projectElement.setAttribute('date', project.year); 
+  // Mobile
+  const mobileDropdown = document.getElementById('category-select');
 
-            
-            projectElement.classList.add('show'); // Start transition to show the element
-  
-            container.appendChild(projectElement);
-          });
-        })
-        .catch(error => console.error('Error loading project data:', error));
-    }
-  
-    // Initially load all projects
+  mobileDropdown.addEventListener('change', function () {
+    const category = this.value;
+    fetchProjects(category);
+  });
+
+  function fetchProjects(category) {
+    fetch('/portfolio.json')
+      .then(response => response.json())
+      .then(projects => {
+        // If "All" is selected, don't filter the projects
+        const filteredProjects = category === "All" ? projects : projects.filter(project => project.category === category);
+
+        filteredProjects.sort((a, b) => new Date(b.year) - new Date(a.year));
+
+        // Clear existing projects
+        container.innerHTML = '';
+
+        // Add filtered projects to the container
+        filteredProjects.forEach(project => {
+          const projectElement = document.createElement('portfolio-showcase');
+          projectElement.setAttribute('title', project.title);
+          projectElement.setAttribute('subtitle', project.subtitle);
+          projectElement.setAttribute('img', project.img);
+          projectElement.setAttribute('link', project.link);
+          projectElement.setAttribute('date', project.year);
+
+          projectElement.classList.add('show'); // Start transition to show the element
+
+          container.appendChild(projectElement);
+        });
+      })
+      .catch(error => console.error('Error loading project data:', error));
+  }
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get('category');
+  if (category) {
+    fetchProjects(category);
+    const button = document.querySelector(`[data-category="${category}"]`);
+    button.classList.add('active');
+  }
+  else {
     fetchProjects('All');
+    const button = document.querySelector(`[data-category="All"]`);
+    button.classList.add('active');
+  }
+});
+
+/* Sticky category select */
+document.addEventListener("DOMContentLoaded", function () {
+  const select = document.querySelector('.category-select');
+  const selectTop = select.offsetTop; // Get the initial top offset of the select
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > selectTop - 40) {
+      select.classList.add('fixed');
+    } else {
+      select.classList.remove('fixed');
+    }
   });
-  
-  /* Sticky category select */
-  document.addEventListener("DOMContentLoaded", function() {
-    const select = document.querySelector('.category-select');
-    const selectTop = select.offsetTop; // Get the initial top offset of the select
-  
-    window.addEventListener('scroll', function() {
-      if (window.pageYOffset > selectTop - 40) {
-        select.classList.add('fixed');
-      } else {
-        select.classList.remove('fixed');
-      }
-    });
-  });
+});

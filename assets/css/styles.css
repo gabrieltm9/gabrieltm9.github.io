@@ -512,7 +512,7 @@ img {
   pointer-events: none;
   border-radius: var(--border-rad);
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -544,7 +544,7 @@ img {
 .category-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
   /* Adjust as necessary for spacing */
   justify-content: center;
   /* Center the buttons container */
@@ -554,20 +554,21 @@ img {
 
 .category-button {
   padding: 10px 20px;
+  width: 150px;
   cursor: pointer;
   border: none;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   /* Light gray, adjust as needed */
   transition: background-color 0.3s ease;
   border-radius: var(--border-rad);
 }
 
 .category-button.active {
-  background-color: #eee;
+  background-color: whitesmoke;
 }
 
 .category-button:hover {
-  color: rgb(129, 129, 129);
+  color: rgb(108, 108, 108);
 }
 
 .category-select {
