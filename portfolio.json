@@ -19,7 +19,7 @@
         "category": "GameDev",
         "title": "The Miracle Worker",
         "subtitle": "A psychology themed trivia game created for the Psychology AP class",
-        "img": "https://raw.githubusercontent.com/gabrieltm9/The-Miracle-Worker/master/logo.png",
+        "img": "/assets/img/portfolio/MiracleWorker.png",
         "link": "https://github.com/gabrieltm9/The-Miracle-Worker",
         "year": "2019"
     },
@@ -54,6 +54,14 @@
         "img": "https://github.com/gabrieltm9/RelatedRateCars/assets/12070323/d633d5c1-2e7f-4f6e-ade3-01ac2304918d",
         "link": "https://github.com/gabrieltm9/RelatedRateCars",
         "year": "2019"
+    },
+    {
+        "category": "GameDev",
+        "title": "Overworld",
+        "subtitle": "Overworld is a co-op survival game. Gather resources, make equipment, and build to survive, while exploring a lush open world.",
+        "img": "https://partner.steamgames.com/gfxproxy/gfx/apps/1439210/capsule_616x353.jpg?t=1601653965",
+        "link": "https://store.steampowered.com/app/1439210/Overworld/?beta=1",
+        "year": "2020"
     },
     {
         "category": "GameDev",
@@ -144,14 +152,6 @@
         "year": "2023"
     },
     {
-        "category": "GameDev",
-        "title": "Overworld",
-        "subtitle": "Overworld is a co-op survival game. Gather resources, make equipment, and build to survive, while exploring a lush open world.",
-        "img": "https://partner.steamgames.com/gfxproxy/gfx/apps/1439210/capsule_616x353.jpg?t=1601653965",
-        "link": "https://store.steampowered.com/app/1439210/Overworld/?beta=1",
-        "year": "2020"
-    },
-    {
         "category": "Production",
         "title": "Patent Pending",
         "subtitle": "A podcast interviewing the student leaders of at Pine Crest 2020.",
@@ -206,5 +206,13 @@
         "img": "/assets/img/portfolio/ProxyVend.png",
         "link": "http://gmoncau.com/Proxy-Vend/",
         "year": "2023"
+    },
+    {
+        "category": "Business",
+        "title": "Fifth Dimension",
+        "subtitle": "Led 7 teammates over a semester to create an extensive business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service.",
+        "img": "https://media.licdn.com/dms/image/D4E2DAQFbz1nGjvvPXw/profile-treasury-document-cover-images_480/0/1714256148436?e=1714863600&v=beta&t=1DCoYAYAJ3Af7LVz3WHkcFshIl5kUd8Q7h1KhfVFv1o",
+        "link": "/assets/files/FifthDimension.pdf",
+        "year": "2022"
     }
 ]
