@@ -1,8 +1,8 @@
 [
     {
-        "category": "WebDev",
+        "category": "Software",
         "title": "Something",
-        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs",
+        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs. Designed and built full stack MVP with React, Express, PostgreSQL, and Azure. ",
         "img": "assets/img/portfolio/Something.jpg",
         "link": "/portfolio/AppDev/Something/Something.html",
         "year": "2022"
@@ -12,16 +12,8 @@
         "title": "Flint",
         "subtitle": "TSA Game 2015-2016",
         "img": "/assets/img/portfolio/Flint.png",
-        "link": "/portfolio/WebDev/Project2/Project2.html",
+        "link": "/portfolio/Software/Project2/Project2.html",
         "year": "2015"
-    },
-    {
-        "category": "GameDev",
-        "title": "DnDSim",
-        "subtitle": "A virtual tabletop for D&D 5e meant to allow playing, organizing, and creating of D&D content",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtdQj5Do5u7UMbchenW_KlulcQ72zm1gEpk5pSjqGqHg&s",
-        "link": "https://github.com/gabrieltm9/DnDSim",
-        "year": "2018"
     },
     {
         "category": "GameDev",
@@ -41,6 +33,14 @@
     },
     {
         "category": "GameDev",
+        "title": "Terra Nova",
+        "subtitle": "Building a better tomorrow through environmental sustainability. Winner of BostonHacks 2020",
+        "img": "/assets/img/portfolio/TerraNova.png",
+        "link": "https://devpost.com/software/terra-nova-8is53l",
+        "year": "2020"
+    },
+    {
+        "category": "GameDev",
         "title": "The Oasis",
         "subtitle": "A virtual sanctuary bringing players anonymously together through artistic creativity and engaging messages. Winner of BostonHacks MiniHack 2020",
         "img": "/assets/img/portfolio/Oasis.png",
@@ -54,14 +54,6 @@
         "img": "https://github.com/gabrieltm9/RelatedRateCars/assets/12070323/d633d5c1-2e7f-4f6e-ade3-01ac2304918d",
         "link": "https://github.com/gabrieltm9/RelatedRateCars",
         "year": "2019"
-    },
-    {
-        "category": "GameDev",
-        "title": "Terra Nova",
-        "subtitle": "Building a better tomorrow through environmental sustainability. Winner of BostonHacks 2020",
-        "img": "/assets/img/portfolio/TerraNova.png",
-        "link": "https://devpost.com/software/terra-nova-8is53l",
-        "year": "2020"
     },
     {
         "category": "GameDev",
@@ -90,7 +82,7 @@
     {
         "category": "Production",
         "title": "Living Wall",
-        "subtitle": "The project files for the TSA 3D Animation 2018-2019 (Theme: Ancient Technology)",
+        "subtitle": "TSA 3D Animation 2018-2019 (Theme: Ancient Technology)",
         "img": "",
         "link": "https://github.com/PC-TSA/3DAnimation2018-2019",
         "year": "2018"
@@ -98,24 +90,16 @@
     {
         "category": "GameDev",
         "title": "Legacy",
-        "subtitle": "TSA Game 2017-2018 (Theme: RPG that is TSA themed)",
-        "img": "https://github.com/PC-TSA/GameFiles2018-2019/blob/master/LegacyCropped.png?raw=true",
+        "subtitle": "TSA Game 2018-2019 (Theme: RPG that is TSA themed)",
+        "img": "/assets/img/portfolio/Legacy.png",
         "link": "https://github.com/PC-TSA/GameFiles2018-2019",
-        "year": "2017"
-    },
-    {
-        "category": "GameDev",
-        "title": "Fashion AR-App",
-        "subtitle": "TSA Fashion Design Nationals 2019: Augmented Reality App",
-        "img": "https://github.com/PC-TSA/Fashion2018-2019AR-APP/blob/master/Logo.png?raw=true",
-        "link": "https://github.com/PC-TSA/Fashion2018-2019AR-APP",
-        "year": "2019"
+        "year": "2018"
     },
     {
         "category": "GameDev",
         "title": "Tritonal",
         "subtitle": "TSA Game 2019-2020 (Theme: Sporting game centered around the 2020 Olympics)",
-        "img": "",
+        "img": "/assets/img/portfolio/Tritonal.png",
         "link": "https://github.com/PC-TSA/GameFiles2019-2020",
         "year": "2019"
     },
@@ -160,9 +144,17 @@
         "year": "2023"
     },
     {
+        "category": "GameDev",
+        "title": "Overworld",
+        "subtitle": "Overworld is a co-op survival game. Gather resources, make equipment, and build to survive, while exploring a lush open world.",
+        "img": "https://partner.steamgames.com/gfxproxy/gfx/apps/1439210/capsule_616x353.jpg?t=1601653965",
+        "link": "https://store.steampowered.com/app/1439210/Overworld/?beta=1",
+        "year": "2020"
+    },
+    {
         "category": "Production",
         "title": "Patent Pending",
-        "subtitle": "A podacst interviewing the student leaders of at Pine Crest 2020.",
+        "subtitle": "A podcast interviewing the student leaders of at Pine Crest 2020.",
         "img": "https://i.ytimg.com/vi/m1MhKkUBULE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCKjhcPd5eZ5TwAW9QP0aH1SJRWRA",
         "link": "https://podcasters.spotify.com/pod/show/gabrieltm9",
         "year": "2020"
@@ -185,6 +177,14 @@
     },
     {
         "category": "Production",
+        "title": "Hindsight",
+        "subtitle": "A podcast looking back at the lives of particular students, organizations, and events at Boston University.",
+        "img": "https://i9.ytimg.com/vi/5zAfKaCqoA8/mqdefault.jpg?v=6073a5ee&sqp=CJTTurEG&rs=AOn4CLB1ED64IPDibiX7mOfn9eoGXLGuIQ",
+        "link": "https://www.youtube.com/watch?v=5zAfKaCqoA8",
+        "year": "2021"
+    },
+    {
+        "category": "Production",
         "title": "Red Bull Valorant Campus Clutch @ BU",
         "subtitle": "Ran and participated in the Red Bull global Campus Clutch tournament qualifier held at Boston University in partnership with Balance Patch.",
         "img": "https://i.ytimg.com/vi/9M53Q96o9Lo/maxresdefault.jpg",
@@ -192,11 +192,19 @@
         "year": "2021"
     },
     {
-        "category": "Business",
-        "title": "Fifth Dimension",
-        "subtitle": "Led 7 teammates over a semester to create an extensive business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service.",
-        "img": "https://media.licdn.com/dms/image/D4E2DAQFbz1nGjvvPXw/profile-treasury-document-cover-images_480/0/1714256148436?e=1714863600&v=beta&t=1DCoYAYAJ3Af7LVz3WHkcFshIl5kUd8Q7h1KhfVFv1o",
-        "link": "https://www.youtube.com/watch?v=9M53Q96o9Lo",
-        "year": "2022"
+        "category": "Production",
+        "title": "Katana Trailer",
+        "subtitle": "A trailer for the sushi restaurant Katana in Miami, FL.",
+        "img": "https://i.ytimg.com/vi/PgOK91cK84g/sddefault.jpg",
+        "link": "https://www.youtube.com/watch?v=PgOK91cK84g",
+        "year": "2021"
+    },
+    {
+        "category": "Software",
+        "title": "Proxy-Vend",
+        "subtitle": "A flutter-based app to track vending machine locations in Italy.",
+        "img": "/assets/img/portfolio/ProxyVend.png",
+        "link": "http://gmoncau.com/Proxy-Vend/",
+        "year": "2023"
     }
 ]

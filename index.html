@@ -27,9 +27,10 @@
                     <div class="nav__bg">
                         <ul class="nav__list">
                             <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                            <li class="nav__item"><a href="#timeline" class="nav__link">Timeline</a></li>
                             <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                             <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                            <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
                             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                         </ul>
                     </div>
@@ -78,27 +79,24 @@
         <!--===== PORTFOLIO =====-->
         <script src="/assets/js/components/portfolioShowcase.js"></script>
 
-        <section class="work section" id="appdev">
+        <section class="work section" id="portfolio">
             <!-- Category Buttons -->
             <div class="category-buttons">
                 <button class="category-button" data-category="All">All</button>
                 <button class="category-button" data-category="GameDev">Game Dev</button>
-                <button class="category-button" data-category="WebDev">Web Dev</button>
                 <button class="category-button" data-category="Software">Software</button>
                 <button class="category-button" data-category="Business">Business</button>
                 <button class="category-button" data-category="Production">Production</button>
             </div>
 
+            <div class="category-select-placeholder" style="height: 0;"></div>
             <div class="category-select">
                 <select id="category-select">
                     <option selected value="All">All</option>
                     <option value="GameDev">Game Dev</option>
-                    <option value="WebDev">Web Dev</option>
                     <option value="Software">Software</option>
-                    <option value="Data">Data Analytics</option>
-                    <option value="Marketing">Marketing</option>
+                    <option value="Data">Business</option>
                     <option value="Production">Production</option>
-                    <option value="Other">Other</option>
                 </select>
             </div>
 
@@ -110,11 +108,11 @@
         <!--===== TIMELINE =====-->
         <script src="/assets/js/timeline.js"></script>
         <div class="timeline-container">
-            <div class="section expand">
+            <div class="section expand" id="timeline">
                 <div class="timeline-container sticky">
                     <div class="wrapper">
                         <div class="c-details">
-                            <h2 class="timeline-header">Timeline header</h2>
+                            <h2 class="timeline-header">Timeline</h2>
                         </div>
                         <div class="c-scrolling-content">
                             <div class="_w-scrolling-content">
@@ -188,7 +186,7 @@
                                         </div>
                                         <div class="c-scrolling-details">
                                             <h4 class="scroll-item-header">2023</h4>
-                                            <p class="scroll-details"><div style="font-size: large;">Universita Bocconi</div>Milan, Italy</p>
+                                            <p class="scroll-details"><div style="font-size: large;">Università Bocconi</div>Milan, Italy</p>
                                         </div>
                                     </div>
                                     <div class="c-scrolling-item">

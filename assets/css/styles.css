@@ -581,6 +581,8 @@ img {
   margin-bottom: 1.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  border-radius: var(--border-rad);
+  width: 93.5%;
 }
 
 /* ===== TIMELINE =====*/

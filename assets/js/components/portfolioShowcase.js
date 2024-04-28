@@ -105,13 +105,17 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Sticky category select */
 document.addEventListener("DOMContentLoaded", function () {
   const select = document.querySelector('.category-select');
-  const selectTop = select.offsetTop; // Get the initial top offset of the select
+  const placeholder = document.querySelector('.category-select-placeholder');
+  const selectHeight = select.offsetHeight;
+  const selectTop = select.offsetTop;
 
   window.addEventListener('scroll', function () {
-    if (window.pageYOffset > selectTop - 40) {
-      select.classList.add('fixed');
-    } else {
-      select.classList.remove('fixed');
-    }
+      if (window.pageYOffset > selectTop - 65) {
+          select.classList.add('fixed');
+          placeholder.style.height = `${selectHeight}px`; // Set the height of the placeholder
+      } else {
+          select.classList.remove('fixed');
+          placeholder.style.height = '0px'; // Reset the placeholder height
+      }
   });
 });

@@ -17,6 +17,34 @@ outdiv.onclick = function () {
     document.getElementById("nav-menu").classList.toggle('show')
 };
 
+/*===== Nav Section Buttons =====*/
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('a.nav__link');
+
+    function scrollToSection(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+
+        const targetId = this.getAttribute('href'); // Get the target section ID from the href attribute
+        const targetSection = document.querySelector(targetId); // Select the target section
+
+        if (targetSection) {
+            const header = document.querySelector('.timeline-container.sticky'); // Select the sticky header
+            const headerHeight = header ? header.offsetHeight : 0; // Get the height of the header, or 0 if not found
+
+            const sectionTop = targetSection.offsetTop; // Get the top position of the target section
+            window.scrollTo({
+                top: sectionTop - headerHeight - 10, // Subtract header height + a small offset for spacing
+                behavior: 'smooth' // Optional: Add smooth scrolling
+            });
+        }
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', scrollToSection); // Attach the click event
+    });
+});
+
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
