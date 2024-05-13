@@ -59,7 +59,7 @@
         "category": "GameDev",
         "title": "Overworld",
         "subtitle": "Overworld is a co-op survival game. Gather resources, make equipment, and build to survive, while exploring a lush open world.",
-        "img": "https://partner.steamgames.com/gfxproxy/gfx/apps/1439210/capsule_616x353.jpg?t=1601653965",
+        "img": "/assets/img/portfolio/Overworld.jpg",
         "link": "https://store.steampowered.com/app/1439210/Overworld/?beta=1",
         "year": "2020"
     },
@@ -211,7 +211,7 @@
         "category": "Business",
         "title": "Fifth Dimension",
         "subtitle": "Led 7 teammates over a semester to create an extensive business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service.",
-        "img": "https://media.licdn.com/dms/image/D4E2DAQFbz1nGjvvPXw/profile-treasury-document-cover-images_480/0/1714256148436?e=1714863600&v=beta&t=1DCoYAYAJ3Af7LVz3WHkcFshIl5kUd8Q7h1KhfVFv1o",
+        "img": "/assets/img/portfolio/FifthDimension.png",
         "link": "/assets/files/FifthDimension.pdf",
         "year": "2022"
     }
