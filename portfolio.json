@@ -16,6 +16,14 @@
         "year": "2015"
     },
     {
+        "category": "Software",
+        "title": "Crown Joules",
+        "subtitle": "Designed and coded autonomous and manual robotics systems for the FIRST Tech Challenge.",
+        "img": "/assets/img/portfolio/CJ.png",
+        "link": "https://www.pinecrest.edu/news/2019-02-11/robotics-team-advances-to-state-championship",
+        "year": "2019"
+    },
+    {
         "category": "GameDev",
         "title": "The Miracle Worker",
         "subtitle": "A psychology themed trivia game created for the Psychology AP class",
@@ -56,11 +64,11 @@
         "year": "2019"
     },
     {
-        "category": "GameDev",
-        "title": "Overworld",
-        "subtitle": "Overworld is a co-op survival game. Gather resources, make equipment, and build to survive, while exploring a lush open world.",
-        "img": "/assets/img/portfolio/Overworld.jpg",
-        "link": "https://store.steampowered.com/app/1439210/Overworld/?beta=1",
+        "category": "Software",
+        "title": "BUCS Server",
+        "subtitle": "Founded and grew the Computer Science Discord server at Boston University to ~2000 members.",
+        "img": "https://cdn.discordapp.com/attachments/794245478476677151/794246033172463636/Banner.png?ex=66478ac2&is=66463942&hm=5507846e57e95252c30492abc8dbe868c3137cd51ccfdbf2f286c1a430da9ab5&",
+        "link": "https://discord.gg/uEUureTCmu",
         "year": "2020"
     },
     {
@@ -83,16 +91,16 @@
         "category": "GameDev",
         "title": "Galactic Gauntlet",
         "subtitle": "TSA Game 2016-2017 (Theme: Arcade)",
-        "img": "",
+        "img": "/assets/img/portfolio/GG.png",
         "link": "https://github.com/PC-TSA/GameFiles2016-2017",
         "year": "2016"
     },
     {
         "category": "Production",
         "title": "Living Wall",
-        "subtitle": "TSA 3D Animation 2018-2019 (Theme: Ancient Technology)",
-        "img": "",
-        "link": "https://github.com/PC-TSA/3DAnimation2018-2019",
+        "subtitle": "TSA 3D Animation 2018-2019",
+        "img": "/assets/img/portfolio/3DAnim2018.png",
+        "link": "/assets/files/3DAnim2018.mp4",
         "year": "2018"
     },
     {
@@ -115,16 +123,16 @@
         "category": "Production",
         "title": "Anthropocene",
         "subtitle": "TSA 3D Animation 2019-2020 (Theme: Impact of humans on the environment)",
-        "img": "",
-        "link": "https://github.com/PC-TSA/3DAnimation2019-2020",
+        "img": "/assets/img/portfolio/3DAnim2019.png",
+        "link": "https://youtu.be/SUQ_t5IoNt0",
         "year": "2019"
     },
     {
         "category": "Production",
         "title": "Drones",
         "subtitle": "SciVis 2019-2020",
-        "img": "",
-        "link": "https://github.com/PC-TSA/SciVis2019-2020",
+        "img": "/assets/img/portfolio/SciVis2019.png",
+        "link": "https://youtu.be/uWWIGN9INKY",
         "year": "2019"
     },
     {
@@ -155,7 +163,7 @@
         "category": "Production",
         "title": "Patent Pending",
         "subtitle": "A podcast interviewing the student leaders of at Pine Crest 2020.",
-        "img": "https://i.ytimg.com/vi/m1MhKkUBULE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCKjhcPd5eZ5TwAW9QP0aH1SJRWRA",
+        "img": "/assets/img/portfolio/PatentPending.png",
         "link": "https://podcasters.spotify.com/pod/show/gabrieltm9",
         "year": "2020"
     },
@@ -163,7 +171,7 @@
         "category": "Production",
         "title": "UPE Hotspot",
         "subtitle": "Join hosts Gabriel Moncau and Phillip Tran bi-weekly as they explore the issues, innovations, and iconography of the tech industry. Created with UPE @ Boston University.",
-        "img": "https://i.ytimg.com/vi/NTuI2b9hZGM/maxresdefault.jpg",
+        "img": "/assets/img/portfolio/Hotspot.png",
         "link": "https://podcasters.spotify.com/pod/show/upe-hotspot",
         "year": "2021"
     },
