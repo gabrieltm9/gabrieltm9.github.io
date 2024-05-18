@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); // Prevent default anchor behavior
 
         const targetId = this.getAttribute('href'); // Get the target section ID from the href attribute
+        
+        //Set browser url to the curernt url + targetId
+        window.history.pushState(null, null, window.location.href.split('#')[0] + targetId);
+
         const targetSection = document.querySelector(targetId); // Select the target section
 
         if (targetSection) {
