@@ -2,7 +2,7 @@
     {
         "category": "Software",
         "title": "Something",
-        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs. Designed and built full stack MVP with React, Express, PostgreSQL, and Azure. ",
+        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs. Built full stack MVP with React, Express, PostgreSQL, and Azure.",
         "img": "assets/img/portfolio/Something.jpg",
         "link": "/portfolio/AppDev/Something/Something.html",
         "year": "2022"
@@ -50,7 +50,7 @@
     {
         "category": "GameDev",
         "title": "The Oasis",
-        "subtitle": "A virtual sanctuary bringing players anonymously together through artistic creativity and engaging messages. Winner of BostonHacks MiniHack 2020",
+        "subtitle": "A virtual world bringing players together through artistic expression. Winner of BostonHacks MiniHack 2020",
         "img": "/assets/img/portfolio/Oasis.jpg",
         "link": "https://devpost.com/software/the-oasis",
         "year": "2020"
@@ -146,7 +146,7 @@
     {
         "category": "Business",
         "title": "RedBull Kumite",
-        "subtitle": "Created campaign for esports event using data-driven analysis to raise awareness, drive registration, and strengthen brand imaging",
+        "subtitle": "Campaign for esports event using data-driven analysis to raise awareness and drive registration.",
         "img": "/assets/img/portfolio/Kumite.jpg",
         "link": "https://media.licdn.com/dms/document/media/D562DAQFUi_AduNp3Tw/profile-treasury-document-pdf-analyzed/0/1709572245924?e=1714608000&v=beta&t=UUetv_ZgM4vepgi9OMxN013aUaNSmY6fw5HV_YdPHmM",
         "year": "2023"
@@ -154,7 +154,7 @@
     {
         "category": "Business",
         "title": "IBM Asset Summit",
-        "subtitle": "Created and pitched strategy for an IBM sustainability event aimed at raising market penetration and brand awareness during a selective cross-functional program",
+        "subtitle": "Strategy for a sustainability event to raise IBM Maximo's market penetration and brand awareness.",
         "img": "/assets/img/portfolio/IBMSummit.jpg",
         "link": "https://media.licdn.com/dms/document/media/D4D2DAQHiZey0YSpTwg/profile-treasury-document-pdf-analyzed/0/1691013905043?e=1714608000&v=beta&t=PrRc6VFDNtsxgIVqIOOXQUjQe1ml9sSORhL_MXkGYGs",
         "year": "2023"
@@ -170,7 +170,7 @@
     {
         "category": "Production",
         "title": "UPE Hotspot",
-        "subtitle": "Join hosts Gabriel Moncau and Phillip Tran bi-weekly as they explore the issues, innovations, and iconography of the tech industry. Created with UPE @ Boston University.",
+        "subtitle": "A bi-weekly podcast with UPE @ BU exploring the issues, innovations, and iconography of the tech industry.",
         "img": "/assets/img/portfolio/Hotspot.jpg",
         "link": "https://podcasters.spotify.com/pod/show/upe-hotspot",
         "year": "2021"
@@ -178,7 +178,7 @@
     {
         "category": "Production",
         "title": "Showstopper",
-        "subtitle": "Join hosts Gabriel Moncau and Phillip Tran bi-weekly as they explore the collegiate Valorant scene. Created with the Boston University Gaming Club.",
+        "subtitle": "A bi-weekly podcast with the BU Gaming Club exploring the Valorant collegiate scene, updates, and meta.",
         "img": "https://i.ytimg.com/vi/MhOFJFfQA38/maxresdefault.jpg",
         "link": "https://podcasters.spotify.com/pod/show/bu-showstopper",
         "year": "2021"
@@ -194,7 +194,7 @@
     {
         "category": "Production",
         "title": "RedBull Valorant Campus Clutch",
-        "subtitle": "Ran and participated in the Red Bull global Campus Clutch tournament qualifier held at Boston University in partnership with Balance Patch.",
+        "subtitle": "Ran a regional Valorant esports tournament qualifier held at BU in partnership with Red Bull and Balance Patch.",
         "img": "https://i.ytimg.com/vi/9M53Q96o9Lo/maxresdefault.jpg",
         "link": "https://www.youtube.com/watch?v=9M53Q96o9Lo",
         "year": "2021"
@@ -218,7 +218,7 @@
     {
         "category": "Business",
         "title": "Fifth Dimension",
-        "subtitle": "Led 7 teammates over a semester to create an extensive business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service.",
+        "subtitle": "A business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service.",
         "img": "/assets/img/portfolio/FifthDimension.png",
         "link": "/assets/files/FifthDimension.pdf",
         "year": "2022"
