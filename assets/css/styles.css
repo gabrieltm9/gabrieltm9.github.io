@@ -4,6 +4,7 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 2.5rem;
+  --header-height-mobile: 3rem;
   --font-semi: 600;
   /*===== Colors =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
@@ -215,7 +216,7 @@ img {
   .nav__bg {
     background-color: #333;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
-    width: 35%;
+    width: 42%;
     height: 100%;
     right: 0;
     position: absolute;
@@ -230,8 +231,8 @@ img {
   }
 
   .header__flags {
-    margin-left: auto;
-    margin-right: 6px;
+    position: absolute;
+    right: 46px;
   }
 }
 
@@ -264,7 +265,7 @@ img {
 
 .nav__toggle {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
   padding-top: 5px;
 }
@@ -756,6 +757,10 @@ img {
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 600px) {
+  .nav {
+    height: var(--header-height-mobile);
+  }
+
   .home {
     padding: 2rem 1rem 0rem;
     grid-template-columns: 1fr;
