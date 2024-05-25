@@ -32,12 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const targetSection = document.querySelector(targetId); // Select the target section
 
         if (targetSection) {
-            const header = document.querySelector('.timeline-container.sticky'); // Select the sticky header
-            const headerHeight = header ? header.offsetHeight : 0; // Get the height of the header, or 0 if not found
-
             const sectionTop = targetSection.offsetTop; // Get the top position of the target section
             window.scrollTo({
-                top: sectionTop - headerHeight - 10, // Subtract header height + a small offset for spacing
+                top: sectionTop - 50,
                 behavior: 'smooth' // Optional: Add smooth scrolling
             });
         }

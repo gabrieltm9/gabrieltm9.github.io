@@ -6,45 +6,45 @@
         "link": ""
     },
     {
-        "text": "Santiago, Chile",
-        "date": "2008",
-        "img": "https://flagicons.lipis.dev/flags/4x3/cl.svg",
-        "link": ""
+        "text": "Nido de Aguilas\nSantiago, Chile",
+        "date": "2008 - 2012",
+        "img": "/assets/img/timeline/Nido.png",
+        "link": "https://www.nido.cl/"
     },
     {
         "text": "Pine Crest School\nFort Lauderdale, FL",
-        "date": "2012",
+        "date": "2012 - 2020",
         "img": "/assets/img/timeline/PC.png",
-        "link": "www.pinecrest.edu"
+        "link": "https://www.pinecrest.edu"
     },
     {
         "text": "Boston University\nBS in Business Administration\nBA in Psychology\nMinor in Computer Science",
         "date": "2020 - 2025",
         "img": "/assets/img/timeline/BU.png",
-        "link": "www.bu.edu"
+        "link": "https://www.bu.edu"
     },
     {
-        "text": "University of Sydney\nSydney, Australia",
+        "text": "University of Sydney\nStudy Abroad\nSydney, Australia",
         "date": "2023",
         "img": "/assets/img/timeline/USyd.svg",
-        "link": "www.sydney.edu.au"
+        "link": "https://www.sydney.edu.au"
     },
     {
         "text": "RGP Consulting\nClient Development Intern\nSydney, Australia",
         "date": "2023",
         "img": "/assets/img/timeline/RGP.png",
-        "link": "rgp.com"
+        "link": "https://rgp.com"
     },
     {
-        "text": "Università Bocconi\nMilan, Italy",
+        "text": "Università Bocconi\nStudy Abroad\nMilan, Italy",
         "date": "2023",
         "img": "/assets/img/timeline/Bocconi.png",
-        "link": "www.unibocconi.it/en"
+        "link": "https://www.unibocconi.it/en"
     },
     {
-        "text": "IBM\nMarketing Intern\nAustin, TX",
+        "text": "IBM\nBusiness M&C Intern\nAustin, TX",
         "date": "2024",
         "img": "/assets/img/timeline/IBM.svg",
-        "link": "www.ibm.com"
+        "link": "https://www.ibm.com"
     }
 ]

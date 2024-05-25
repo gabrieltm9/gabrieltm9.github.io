@@ -56,7 +56,12 @@ document.addEventListener('DOMContentLoaded', function() {
           container.appendChild(timelineElement);
         });
 
-        section.style.height = timeline.length * 23 + 'vh';
+        // Set the height of the timeline section
+        if (window.innerWidth <= 600) {
+          section.classList.remove('expand');
+        } else {
+          section.style.height = timeline.length * 210 + 'px'; //210 = manually calculated height of each timeline item
+        }
       })
       .catch(error => console.error('Error loading timeline data:', error));
   }
@@ -71,21 +76,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const stickyTop = stickyTimeline.getBoundingClientRect().top;
     const stickyBottom = stickyTimeline.getBoundingClientRect().bottom;
 
-    if (stickyTop <= window.innerHeight * 0.305 && stickyBottom > 0) {
-      // Activate sticky behavior
-      if (!isStickyActive) {
-        stickyTimeline.classList.add('fixed');
-        isStickyActive = true;
-      }
-
-      // Horizontal scroll logic
-      let scrollDistance = window.scrollY - sectionExpand.offsetTop;
-      stickyTimeline.scrollLeft = scrollDistance;
-    } else {
-      // Deactivate sticky behavior
-      if (isStickyActive) {
-        stickyTimeline.classList.remove('fixed');
-        isStickyActive = false;
+    if (window.innerWidth >= 600) {
+      if (stickyTop <= window.innerHeight * 0.305 && stickyBottom > 0) {
+        // Activate sticky behavior
+        if (!isStickyActive) {
+          stickyTimeline.classList.add('fixed');
+          isStickyActive = true;
+        }
+  
+        // Horizontal scroll logic
+        let scrollDistance = window.scrollY - sectionExpand.offsetTop;
+        stickyTimeline.scrollLeft = scrollDistance;
+      } else {
+        // Deactivate sticky behavior
+        if (isStickyActive) {
+          stickyTimeline.classList.remove('fixed');
+          isStickyActive = false;
+        }
       }
     }
   }
