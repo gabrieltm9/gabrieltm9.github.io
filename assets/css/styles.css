@@ -104,7 +104,6 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  overflow-x: hidden;
 }
 
 h1,
@@ -231,8 +230,9 @@ img {
   }
 
   .header__flags {
-    position: absolute;
-    right: 46px;
+    margin-left: auto;
+    margin-right: 5px;
+    height: 32%;
   }
 }
 
