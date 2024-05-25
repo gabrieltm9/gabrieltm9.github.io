@@ -649,6 +649,7 @@ img {
 
 .scroll-details {
   margin-bottom: 0;
+  font-size: medium;
 }
 
 .timeline-header {
@@ -847,6 +848,16 @@ img {
   
   .scroll-indicator {
     margin-bottom: 10px; /* Space between the icon and line */
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll-item-header {
+    font-size: 1.2rem;
+  }
+
+  .scroll-details {
+    font-size: 1rem;
   }
   
   .c-scrolling-details {

@@ -18,7 +18,7 @@ class TimelineItem extends HTMLElement {
     </div>
     <div class="c-scrolling-details">
         <h4 class="scroll-item-header">` + date + `</h4>
-        <p class="scroll-details"><div style="font-size: large;">` + text + `</div></p>
+        <div class="scroll-details">` + text + `</div>
     </div> `;
   }
 }
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth <= 600) {
           section.classList.remove('expand');
         } else {
-          section.style.height = timeline.length * 210 + 'px'; //210 = manually calculated height of each timeline item
+          section.style.height = container.offsetWidth + 300 + "px"; // Set the height of the timeline section to the width of the timeline container. 300 = arbitrary value to pad section
         }
       })
       .catch(error => console.error('Error loading timeline data:', error));
