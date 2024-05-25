@@ -140,7 +140,7 @@
         "title": "RedBull Kumite",
         "subtitle": "Campaign for esports event using data-driven analysis to raise awareness and drive registration.",
         "img": "/assets/img/portfolio/Kumite.jpg",
-        "link": "https://media.licdn.com/dms/document/media/D562DAQFUi_AduNp3Tw/profile-treasury-document-pdf-analyzed/0/1709572245924?e=1714608000&v=beta&t=UUetv_ZgM4vepgi9OMxN013aUaNSmY6fw5HV_YdPHmM",
+        "link": "/assets/files/RedbullKumite2024.pdf",
         "year": "2023"
     },
     {
@@ -148,7 +148,7 @@
         "title": "IBM Asset Summit",
         "subtitle": "Strategy for a sustainability event to raise IBM Maximo's market penetration and brand awareness.",
         "img": "/assets/img/portfolio/IBMSummit.jpg",
-        "link": "https://media.licdn.com/dms/document/media/D4D2DAQHiZey0YSpTwg/profile-treasury-document-pdf-analyzed/0/1691013905043?e=1714608000&v=beta&t=PrRc6VFDNtsxgIVqIOOXQUjQe1ml9sSORhL_MXkGYGs",
+        "link": "/assets/files/IBMAMS.pdf",
         "year": "2023"
     },
     {
@@ -200,11 +200,19 @@
         "year": "2021"
     },
     {
-        "category": "Software",
-        "title": "Proxy-Vend",
-        "subtitle": "A flutter-based app to track vending machine locations in Italy.",
-        "img": "/assets/img/portfolio/ProxyVend.jpg",
-        "link": "http://gmoncau.com/Proxy-Vend/",
+        "category": "Business",
+        "title": "RGP C-Suite Buyer Personas",
+        "subtitle": "Created c-suite buyer personas based on holistic analysis of major clients.",
+        "img": "/assets/img/portfolio/RGPPersonas.jpg",
+        "link": "/assets/files/RGPBuyerPersonas2023.pdf",
+        "year": "2023"
+    },
+    {
+        "category": "Business",
+        "title": "Space & Defense Analysis",
+        "subtitle": "Created data-driven framework to compare S&D companies in APAC for fit with RGP's services.",
+        "img": "/assets/img/portfolio/RGPS&D.jpg",
+        "link": "/assets/files/RGPS&D.pdf",
         "year": "2023"
     },
     {
@@ -214,5 +222,13 @@
         "img": "/assets/img/portfolio/FifthDimension.png",
         "link": "/assets/files/FifthDimension.pdf",
         "year": "2022"
+    },
+    {
+        "category": "Business",
+        "title": "PFG Consulting Analysis",
+        "subtitle": "Analysed the grocery wholesaler industry and provided consulting recommendations to client firm Performance Food Group.",
+        "img": "/assets/img/portfolio/PFG.jpg",
+        "link": "/assets/files/PFG.pdf",
+        "year": "2024"
     }
 ]
