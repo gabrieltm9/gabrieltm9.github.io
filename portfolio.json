@@ -136,14 +136,6 @@
         "year": "2019"
     },
     {
-        "category": "Software",
-        "title": "FlutterPRM",
-        "subtitle": "A personal CRM app built with Flutter",
-        "img": "https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png",
-        "link": "https://github.com/gabrieltm9/FlutterPRM",
-        "year": "2024"
-    },
-    {
         "category": "Business",
         "title": "RedBull Kumite",
         "subtitle": "Campaign for esports event using data-driven analysis to raise awareness and drive registration.",

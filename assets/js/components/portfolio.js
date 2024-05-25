@@ -101,21 +101,3 @@ document.addEventListener('DOMContentLoaded', function () {
     button.classList.add('active');
   }
 });
-
-/* Sticky category select */
-document.addEventListener("DOMContentLoaded", function () {
-  const select = document.querySelector('.category-select');
-  const placeholder = document.querySelector('.category-select-placeholder');
-  const selectHeight = select.offsetHeight;
-  const selectTop = select.offsetTop;
-
-  window.addEventListener('scroll', function () {
-      if (window.pageYOffset > selectTop - 65) {
-          select.classList.add('fixed');
-          placeholder.style.height = `${selectHeight}px`; // Set the height of the placeholder
-      } else {
-          select.classList.remove('fixed');
-          placeholder.style.height = '0px'; // Reset the placeholder height
-      }
-  });
-});

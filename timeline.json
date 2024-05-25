@@ -1,0 +1,50 @@
+[
+    {
+        "text": "Sao Paulo, Brazil",
+        "date": "2002",
+        "img": "https://flagicons.lipis.dev/flags/4x3/br.svg",
+        "link": ""
+    },
+    {
+        "text": "Santiago, Chile",
+        "date": "2008",
+        "img": "https://flagicons.lipis.dev/flags/4x3/cl.svg",
+        "link": ""
+    },
+    {
+        "text": "Pine Crest School\nFort Lauderdale, FL",
+        "date": "2012",
+        "img": "/assets/img/timeline/PC.png",
+        "link": "www.pinecrest.edu"
+    },
+    {
+        "text": "Boston University\nBS in Business Administration\nBA in Psychology\nMinor in Computer Science",
+        "date": "2020 - 2025",
+        "img": "/assets/img/timeline/BU.png",
+        "link": "www.bu.edu"
+    },
+    {
+        "text": "University of Sydney\nSydney, Australia",
+        "date": "2023",
+        "img": "/assets/img/timeline/USyd.svg",
+        "link": "www.sydney.edu.au"
+    },
+    {
+        "text": "RGP Consulting\nClient Development Intern\nSydney, Australia",
+        "date": "2023",
+        "img": "/assets/img/timeline/RGP.png",
+        "link": "rgp.com"
+    },
+    {
+        "text": "Università Bocconi\nMilan, Italy",
+        "date": "2023",
+        "img": "/assets/img/timeline/Bocconi.png",
+        "link": "www.unibocconi.it/en"
+    },
+    {
+        "text": "IBM\nMarketing Intern\nAustin, TX",
+        "date": "2024",
+        "img": "/assets/img/timeline/IBM.svg",
+        "link": "www.ibm.com"
+    }
+]

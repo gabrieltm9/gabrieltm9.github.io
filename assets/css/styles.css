@@ -563,6 +563,7 @@ img {
   transition: background-color 0.3s ease;
   border-radius: var(--border-rad);
   color: black;
+  font-size: 14px;
 }
 
 .category-button.active {
@@ -638,12 +639,14 @@ img {
 }
 
 .timeline-header {
-  color: #5f67ff;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 2.5em;
-  font-weight: 600;
-  line-height: 1.2em;
+  text-align: left;
+}
+
+.timeline-header::after {
+  right: auto;
+  width: 92px;
 }
 
 .c-scroll-track {
@@ -653,7 +656,7 @@ img {
 }
 
 .section.expand {
-  height: 170vh;
+  height: 10vh;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
@@ -662,7 +665,6 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 0;
@@ -777,10 +779,6 @@ img {
     display: none;
   }
 
-  .category-select {
-    /* display: flex; */
-  }
-
   .category-buttons {
    gap: 8px;
    padding-bottom: 0.5rem;
@@ -790,10 +788,59 @@ img {
     width: min-content;
     padding:10px;
     margin: 0rem 0rem 0rem 0rem;
+    font-size: 12px;
   }
 
-  .timeline-container {
+  /* .timeline-container {
     display: none;
+  } */
+
+  .timeline-container.sticky {
+    position: static;
+    margin-left: 2.5rem;
+  }
+
+  .c-scroll-track {
+    display: block; /* Switch to block layout for vertical alignment */
+  }
+  
+  .c-scrolling-item {
+    width: 100%; /* Make each timeline item take full width */
+    margin-bottom: 20px; /* Add some space between items */
+    display: flex; /* Align items flexibly */
+  }
+  
+  .c-scrolling-line {
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-right: 10px; /* Add some space to the right */
+    display: flex; /* Ensure children are aligned flexibly */
+    flex-shrink: 0;
+  } 
+  
+  .scroll-line {
+    width: 3px; /* Make the line vertical */
+    height: 100%; /* Set a fixed height */
+    flex-grow: 1; /* Allow the line to grow and fill the container */
+  }
+  
+  .scroll-indicator {
+    margin-bottom: 10px; /* Space between the icon and line */
+  }
+  
+  .c-scrolling-details {
+    padding-left: 20px; /* Add padding to the left */
+    text-align: left; /* Align text to the left */
+    padding-top: 0px;
+  }
+
+  .c-scrolling-item:last-child .c-scrolling-details {
+    padding-bottom: 0px; /* Set padding-bottom to 0px if the parent is the last child */
+  }
+  
+  .scroll-item-header {
+    margin-top: 0;
+    margin-bottom: 5px; /* Space between header and details */
   }
 
   .work {
@@ -905,7 +952,11 @@ img {
 
   .section-title::after {
     width: 80px;
-    top: 3rem;
+    top: 2rem;
+  }
+
+  .timeline-header::after {
+    width: 95px;
   }
 
   .nav {
@@ -948,6 +999,17 @@ img {
 
   .work__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .section-title::after {
+    width: 110px;
+    top: 3rem;
+  }
+
+  .timeline-header::after {
+    width: 143px;
   }
 }
 
