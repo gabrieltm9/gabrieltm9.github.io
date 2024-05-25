@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const targetId = this.getAttribute('href'); // Get the target section ID from the href attribute
         
         //Set browser url to the curernt url + targetId
-        window.history.pushState(null, null, window.location.href.split('#')[0] + targetId);
+        // window.history.pushState(null, null, window.location.href.split('#')[0] + targetId);
 
         const targetSection = document.querySelector(targetId); // Select the target section
 
@@ -62,9 +62,10 @@ const sections = document.querySelectorAll('section[id]')
 function scrollActive() {
     const scrollY = window.pageYOffset
 
+    var assigned = false
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
+        const sectionTop = current.offsetTop - 100;
         sectionId = current.getAttribute('id')
         element = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
         if (element == null)
@@ -72,10 +73,17 @@ function scrollActive() {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             element.classList.add('active')
+            
+            assigned = true
+            document.querySelector('.nav__menu a[href*=timeline]').classList.remove('active') // If section found, remove timeline active
         } else {
             element.classList.remove('active')
         }
     })
+
+    if (!assigned) { // If no section is found, set the timeline as active
+        document.querySelector('.nav__menu a[href*=timeline]').classList.add('active')
+    }
 }
 window.addEventListener('scroll', scrollActive)
 
