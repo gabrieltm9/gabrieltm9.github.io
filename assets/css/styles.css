@@ -225,14 +225,10 @@ img {
     padding-top: 30px;
   }
 
-  .header__flag {
-    margin-right: 5px;
-  }
-
   .header__flags {
     margin-left: auto;
     margin-right: 5px;
-    height: 32%;
+    justify-content: flex-end; /* Ensures horizontal alignment */
   }
 }
 
