@@ -225,10 +225,16 @@ img {
     padding-top: 30px;
   }
 
+  .header__flag {
+    margin-right: 5px;
+    height: 100%;
+  }
+
   .header__flags {
     margin-left: auto;
-    margin-right: 5px;
-    justify-content: flex-end; /* Ensures horizontal alignment */
+    margin-right: 6px;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 
