@@ -38,55 +38,70 @@ customElements.define('portfolio-showcase', PortfolioShowcase);
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.category-button');
   const container = document.getElementById('portfolio-container');
+  const expandButton = document.getElementById('expand-button');
 
-  buttons.forEach(button => {
-    button.addEventListener('click', function () {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
+  let isExpanded = false;
 
-      const category = this.getAttribute('data-category');
-      window.history.pushState(null, null, `?category=${category}`);
+  expandButton.addEventListener('click', function () {
+    if (isExpanded) {
+      const containerTop = container.getBoundingClientRect().top + window.scrollY;
+      // Scroll to the top of the portfolio container with an offset of 100px
+      window.scrollBy({ top: containerTop - 150 - window.scrollY, behavior: 'smooth' });
 
-      fetchProjects(category);
-    });
-  });
-
-  // Mobile
-  const mobileDropdown = document.getElementById('category-select');
-
-  mobileDropdown.addEventListener('change', function () {
-    const category = this.value;
-    fetchProjects(category);
+      // Delay the collapsing to ensure smooth scrolling
+      setTimeout(() => {
+        isExpanded = !isExpanded;
+        toggleProjectsDisplay();
+        expandButton.textContent = isExpanded ? 'Show Less' : 'Expand';
+      }, 500); // Adjust the delay to match the scroll duration
+    } else {
+      isExpanded = !isExpanded;
+      toggleProjectsDisplay();
+      expandButton.textContent = isExpanded ? 'Show Less' : 'Expand';
+    }
   });
 
   function fetchProjects(category) {
     fetch('/portfolio.json')
       .then(response => response.json())
       .then(projects => {
-        // If "All" is selected, don't filter the projects
         const filteredProjects = category === "All" ? projects : projects.filter(project => project.category === category);
-
         filteredProjects.sort((a, b) => new Date(b.year) - new Date(a.year));
-
-        // Clear existing projects
         container.innerHTML = '';
-
-        // Add filtered projects to the container
-        filteredProjects.forEach(project => {
+        filteredProjects.forEach((project, index) => {
           const projectElement = document.createElement('portfolio-showcase');
           projectElement.setAttribute('title', project.title);
           projectElement.setAttribute('subtitle', project.subtitle);
           projectElement.setAttribute('img', project.img);
           projectElement.setAttribute('link', project.link);
           projectElement.setAttribute('date', project.year);
-
-          projectElement.classList.add('show'); // Start transition to show the element
-
+          if (index >= 12) {
+            projectElement.classList.add('portfolio-hidden');
+          }
           container.appendChild(projectElement);
         });
+        toggleProjectsDisplay();
       })
+      .then(() => removeAllLoadHidden()) // Remove all load-hidden classes after loading projects
       .catch(error => console.error('Error loading project data:', error));
   }
+
+  function toggleProjectsDisplay() {
+    const projects = container.querySelectorAll('.portfolio-hidden');
+    projects.forEach(project => {
+      project.classList.toggle('portfolio-expanded', isExpanded);
+    });
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      const category = this.getAttribute('data-category');
+      window.history.pushState(null, null, `?category=${category}`);
+      fetchProjects(category);
+    });
+  });
 
   const urlParams = new URLSearchParams(window.location.search);
   const category = urlParams.get('category');
@@ -94,10 +109,17 @@ document.addEventListener('DOMContentLoaded', function () {
     fetchProjects(category);
     const button = document.querySelector(`[data-category="${category}"]`);
     button.classList.add('active');
-  }
-  else {
+  } else {
     fetchProjects('All');
     const button = document.querySelector(`[data-category="All"]`);
     button.classList.add('active');
   }
 });
+
+/*===== Remove all load-hidden classes =====*/
+function removeAllLoadHidden() {
+  const hiddenElements = document.querySelectorAll('.load-hidden');
+  hiddenElements.forEach(element => {
+    element.classList.remove('load-hidden');
+  });
+}

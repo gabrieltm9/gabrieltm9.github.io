@@ -155,6 +155,16 @@ img {
   padding-bottom: 2rem;
 }
 
+/* Hide elements until page loaded */
+.load-hidden {
+  visibility: hidden;
+}
+
+/* Hide elements until scroll reveal */
+.sr-hidden {
+  visibility: hidden;
+}
+
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1280px;
@@ -545,6 +555,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
   row-gap: 1rem;
+  height: min-content;
 }
 
 .work__item:hover img {
@@ -620,6 +631,41 @@ img {
   transform: scale(1.03);
   opacity: 1;
 }
+
+/* Initial hidden state for hidden portfolio items */
+.portfolio-hidden {
+  max-height: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* State when portfolio items are expanded */
+.portfolio-expanded {
+  position: relative;
+  max-height: 225px; /* Set to a value large enough to fit the content */
+  transition: max-height 0.3s ease;
+}
+
+.expand-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#expand-button {
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: var(--border-rad);
+  cursor: pointer;
+  transition: .3s;
+  border: 0px;
+}
+
+#expand-button:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
 
 /* Categories */
 

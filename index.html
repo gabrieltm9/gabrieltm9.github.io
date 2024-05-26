@@ -52,25 +52,25 @@
         <div style="background-color: whitesmoke;">
             <section class="home bd-grid" id="home">
                 <div class="home__left">
-                    <div class="home__data">
+                    <div class="home__data sr-hidden">
                         <h1 class="home__title" style="margin-bottom: 0;">Hi! I'm<br class="home__title__break">
                             <span class="home__title-color" style="white-space: nowrap;">Gabriel Moncau</span><br>
                         </h1>
                         <h3 class="home__subtitle">Product Manager | Programmer | <span
                                 style="white-space: nowrap;">Tech Enthusiast</span></h3>
-                        <a href="#contact" class="home__contact button nav__link">Contact</a>
+                        <a href="mailto:gmoncau@bu.edu" class="home__contact button">Contact</a>
                         <div class="home__social">
-                            <a href="https://www.linkedin.com/in/gmoncau/" class="home__social-icon"><i
+                            <a href="https://www.linkedin.com/in/gmoncau/" class="home__social-icon sr-hidden"><i
                                     class='bx bxl-linkedin'></i></a>
-                            <a href="https://github.com/gabrieltm9" class="home__social-icon"><i
+                            <a href="https://github.com/gabrieltm9" class="home__social-icon sr-hidden"><i
                                     class='bx bxl-github'></i></a>
-                            <a href="https://discordapp.com/users/186163297349795840" class="home__social-icon"><i
+                            <a href="https://discordapp.com/users/186163297349795840" class="home__social-icon sr-hidden"><i
                                     class='bx bxl-discord'></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="home__right">
-                    <img class="home__img" src="assets/img/me.jpg" alt="">
+                    <img class="home__img sr-hidden" src="assets/img/me.jpg" alt="">
                 </div>
             </section>
         </div>
@@ -78,14 +78,14 @@
         <!--===== PORTFOLIO =====-->
         <script src="/assets/js/components/portfolio.js"></script>
 
-        <section class="work section" id="portfolio">
+        <section class="work section load-hidden" id="portfolio">
             <!-- Category Buttons -->
             <div class="category-buttons">
-                <button class="category-button" data-category="All">All</button>
-                <button class="category-button" data-category="GameDev">Game Dev</button>
-                <button class="category-button" data-category="Software">Software</button>
-                <button class="category-button" data-category="Business">Business</button>
-                <button class="category-button" data-category="Production">Production</button>
+                <button class="category-button sr-hidden" data-category="All">All</button>
+                <button class="category-button sr-hidden" data-category="GameDev">Game Dev</button>
+                <button class="category-button sr-hidden" data-category="Software">Software</button>
+                <button class="category-button sr-hidden" data-category="Business">Business</button>
+                <button class="category-button sr-hidden" data-category="Production">Production</button>
             </div>
 
             <!-- <div class="category-select-placeholder" style="height: 0;"></div> -->
@@ -100,13 +100,18 @@
             </div>
 
             <div class="work__container bd-grid" id="portfolio-container">
-                <!-- Project showcases will be inserted here by JavaScript -->
+                <!-- Project showcases will be inserted here by JS -->
+            </div>
+
+            <!-- Expand Button -->
+            <div class="expand-container">
+                <button id="expand-button">Expand</button>
             </div>
         </section>
 
         <!--===== TIMELINE =====-->
         <script src="/assets/js/components/timeline.js"></script>
-        <div class="timeline-container">
+        <div class="timeline-container load-hidden">
             <div class="section expand" id="timeline">
                 <div class="timeline-container sticky">
                     <div class="wrapper">
@@ -125,9 +130,10 @@
         </div>
 
         <!--===== ABOUT =====-->
-        <section class="about section" id="about">
+        <section class="about section load-hidden" id="about">
             <h2 class="about__title section-title">About</h2>
 
+            <script src="/assets/js/skills.js"></script>
             <div class="skills-wrapper">
                 <div class="skills-track"> <!--===== Programming Languages Carousel =====-->
                     <div class="skills-logo">
@@ -220,21 +226,20 @@
                 </div>
             </div>
         </section>
-        <script src="/assets/js/skills.js"></script>
-    </main>
 
-    <!--===== RESUME =====-->
-    <secion class="resume section" id="resume">
-        <h2 class="section-title">Resume</h2>
-        <div class="resume-container">
-            <object type="application/pdf" data="/assets/files/GTM-Resume.pdf" width="90%" height="auto" class="resume-object">
-                <p>It appears you don't have a PDF plugin for this browser. No worries, you can <a
-                        href="/assets/files/GTM-Resume.pdf">click here to view the PDF.</a></p>
-            </object>
-            <p class="resume-linktext">It appears you are on mobile!<br>
-                <a href="/assets/files/GTM-Resume.pdf">Click here to view the PDF.</a></p>
-        </div>
-    </secion>
+        <!--===== RESUME =====-->
+        <section class="resume section load-hidden" id="resume">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-container">
+                <object type="application/pdf" data="/assets/files/GTM-Resume.pdf" width="90%" height="auto" class="resume-object">
+                    <p>It appears you don't have a PDF plugin for this browser. No worries, you can <a
+                            href="/assets/files/GTM-Resume.pdf">click here to view the PDF.</a></p>
+                </object>
+                <p class="resume-linktext">It appears you are on mobile!<br>
+                    <a href="/assets/files/GTM-Resume.pdf">Click here to view the PDF.</a></p>
+            </div>
+        </section>
+    </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
