@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isExpanded) {
       const containerTop = container.getBoundingClientRect().top + window.scrollY;
       // Scroll to the top of the portfolio container with an offset of 100px
-      window.scrollBy({ top: containerTop - 150 - window.scrollY, behavior: 'smooth' });
+      window.scrollBy({ top: containerTop + 410 - window.scrollY, behavior: 'smooth' });
 
       // Delay the collapsing to ensure smooth scrolling
       setTimeout(() => {

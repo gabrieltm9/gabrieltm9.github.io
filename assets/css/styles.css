@@ -424,6 +424,10 @@ img {
   margin-right: 2rem;
 }
 
+.about__subtext {
+  margin-top: 1rem !important;
+}
+
 /* ===== SKILLS =====*/
 .skills__text {
   margin-right: 1rem;
@@ -442,7 +446,7 @@ img {
   height: 130px;
   overflow: hidden;
   position: relative;
-  width: 70%;
+  width: 60%;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -1102,6 +1106,10 @@ img {
     margin-bottom: 0rem;
   }
 
+  .skills-wrapper {
+    width: 80%;
+  }
+
   .skills-wrapper .skills-track {
     animation: scroll100 40s linear infinite;
   }
@@ -1123,6 +1131,7 @@ img {
     margin-right: 0;
     margin-top: 0.5rem;
     padding: 0.5rem;
+    width: 100%;
   }
 }
 
