@@ -2,7 +2,7 @@
     {
         "category": "Software",
         "title": "Something",
-        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs. Built full stack MVP with React, Express, PostgreSQL, and Azure.",
+        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs. Built full stack MVP with React, Express, PostgreSQL, and Azure",
         "img": "assets/img/portfolio/Something.jpg",
         "link": "/portfolio/AppDev/Something/Something.html",
         "year": "2022"
@@ -17,10 +17,18 @@
     },
     { 
         "category": "Software",
-        "title": "Crown Joules",
-        "subtitle": "Designed and coded autonomous and manual robotics systems for the FIRST Tech Challenge.",
+        "title": "FTC Robotics",
+        "subtitle": "Designed and coded autonomous and manual robotics systems for the FIRST Tech Challenge",
         "img": "/assets/img/portfolio/CJ.jpg",
         "link": "https://www.pinecrest.edu/news/2019-02-11/robotics-team-advances-to-state-championship",
+        "year": "2019"
+    },
+    {
+        "category": "Game Dev",
+        "title": "TEDxPineCrestSchool",
+        "subtitle": "Wrote and presented a TEDx talk on what goes into game design to a live audience",
+        "img": "/assets/img/portfolio/TEDx.jpg",
+        "link": "https://www.youtube.com/watch?v=gahcsvMTBhs",
         "year": "2019"
     },
     {
@@ -66,17 +74,9 @@
     {
         "category": "Software",
         "title": "BUCS Server",
-        "subtitle": "Founded and grew the Computer Science Discord server at Boston University to ~2000 members.",
+        "subtitle": "Founded and grew the Computer Science Discord server at Boston University to ~2000 members",
         "img": "/assets/img/portfolio/BUCS.png",
         "link": "https://discord.gg/uEUureTCmu",
-        "year": "2020"
-    },
-    {
-        "category": "GameDev",
-        "title": "Galactic Gauntlet Remastered",
-        "subtitle": "The PC-TSA 2016-2017 game Galactic Gauntlet remastered in 3D",
-        "img": "/assets/img/portfolio/GGRemastered.jpg",
-        "link": "https://github.com/gabrieltm9/Galactic-Gauntlet-Remastered",
         "year": "2020"
     },
     {
@@ -138,7 +138,7 @@
     {
         "category": "Business",
         "title": "RedBull Kumite",
-        "subtitle": "Campaign for esports event using data-driven analysis to raise awareness and drive registration.",
+        "subtitle": "Campaign for esports event using data-driven analysis to raise awareness and drive registration",
         "img": "/assets/img/portfolio/Kumite.jpg",
         "link": "/assets/files/RedbullKumite2024.pdf",
         "year": "2023"
@@ -146,7 +146,7 @@
     {
         "category": "Business",
         "title": "IBM Asset Summit",
-        "subtitle": "Strategy for a sustainability event to raise IBM Maximo's market penetration and brand awareness.",
+        "subtitle": "Strategy for a sustainability event to raise IBM Maximo's market penetration and brand awareness",
         "img": "/assets/img/portfolio/IBMSummit.jpg",
         "link": "/assets/files/IBMAMS.pdf",
         "year": "2023"
@@ -154,7 +154,7 @@
     {
         "category": "Production",
         "title": "Patent Pending",
-        "subtitle": "A podcast interviewing the student leaders of at Pine Crest 2020.",
+        "subtitle": "A podcast interviewing the student leaders of at Pine Crest 2020",
         "img": "/assets/img/portfolio/PatentPending.jpg",
         "link": "https://podcasters.spotify.com/pod/show/gabrieltm9",
         "year": "2020"
@@ -162,7 +162,7 @@
     {
         "category": "Production",
         "title": "UPE Hotspot",
-        "subtitle": "A bi-weekly podcast with UPE @ BU exploring the issues, innovations, and iconography of the tech industry.",
+        "subtitle": "A bi-weekly podcast with UPE @ BU exploring the issues, innovations, and iconography of the tech industry",
         "img": "/assets/img/portfolio/Hotspot.jpg",
         "link": "https://podcasters.spotify.com/pod/show/upe-hotspot",
         "year": "2021"
@@ -170,7 +170,7 @@
     {
         "category": "Production",
         "title": "Showstopper",
-        "subtitle": "A bi-weekly podcast with the BU Gaming Club exploring the Valorant collegiate scene, updates, and meta.",
+        "subtitle": "A bi-weekly podcast with the BU Gaming Club exploring the Valorant collegiate scene, updates, and meta",
         "img": "https://i.ytimg.com/vi/MhOFJFfQA38/maxresdefault.jpg",
         "link": "https://podcasters.spotify.com/pod/show/bu-showstopper",
         "year": "2021"
@@ -178,7 +178,7 @@
     {
         "category": "Production",
         "title": "Hindsight",
-        "subtitle": "A podcast looking back at the lives of particular students, organizations, and events at Boston University.",
+        "subtitle": "A podcast looking back at the lives of particular students, organizations, and events at Boston University",
         "img": "/assets/img/portfolio/Hindsight.jpg",
         "link": "https://www.youtube.com/watch?v=5zAfKaCqoA8",
         "year": "2021"
@@ -186,7 +186,7 @@
     {
         "category": "Production",
         "title": "RedBull Valorant Campus Clutch",
-        "subtitle": "Ran a regional Valorant esports tournament qualifier held at BU in partnership with Red Bull and Balance Patch.",
+        "subtitle": "Ran a regional Valorant esports tournament qualifier held at BU in partnership with Red Bull and Balance Patch",
         "img": "https://i.ytimg.com/vi/9M53Q96o9Lo/maxresdefault.jpg",
         "link": "https://www.youtube.com/watch?v=9M53Q96o9Lo",
         "year": "2021"
@@ -194,31 +194,31 @@
     {
         "category": "Production",
         "title": "Katana Trailer",
-        "subtitle": "A trailer for the sushi restaurant Katana in Miami, FL.",
+        "subtitle": "A trailer for the sushi restaurant Katana in Miami, FL",
         "img": "https://i.ytimg.com/vi/PgOK91cK84g/sddefault.jpg",
         "link": "https://www.youtube.com/watch?v=PgOK91cK84g",
         "year": "2021"
     },
     {
         "category": "Business",
-        "title": "RGP C-Suite Buyer Personas",
-        "subtitle": "Created c-suite buyer personas based on holistic analysis of major clients.",
-        "img": "/assets/img/portfolio/RGPPersonas.jpg",
-        "link": "/assets/files/RGPBuyerPersonas2023.pdf",
-        "year": "2023"
-    },
-    {
-        "category": "Business",
         "title": "Space & Defense Analysis",
-        "subtitle": "Created data-driven framework to compare S&D companies in APAC for fit with RGP's services.",
+        "subtitle": "Created data-driven framework to compare S&D companies in APAC for fit with RGP's services",
         "img": "/assets/img/portfolio/RGPS&D.jpg",
         "link": "/assets/files/RGPS&D.pdf",
         "year": "2023"
     },
     {
         "category": "Business",
+        "title": "C-Suite Buyer Personas",
+        "subtitle": "Created c-suite buyer personas based on holistic analysis of major RGP clients",
+        "img": "/assets/img/portfolio/RGPPersonas.jpg",
+        "link": "/assets/files/RGPBuyerPersonas2023.pdf",
+        "year": "2023"
+    },
+    {
+        "category": "Business",
         "title": "Fifth Dimension",
-        "subtitle": "A business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service.",
+        "subtitle": "A business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service",
         "img": "/assets/img/portfolio/FifthDimension.png",
         "link": "/assets/files/FifthDimension.pdf",
         "year": "2022"
@@ -226,7 +226,7 @@
     {
         "category": "Business",
         "title": "PFG Consulting Analysis",
-        "subtitle": "Analysed the grocery wholesaler industry and provided consulting recommendations to client firm Performance Food Group.",
+        "subtitle": "Analysed the grocery wholesaler industry and provided consulting recommendations to client firm Performance Food Group",
         "img": "/assets/img/portfolio/PFG.jpg",
         "link": "/assets/files/PFG.pdf",
         "year": "2024"

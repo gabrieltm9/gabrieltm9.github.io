@@ -293,10 +293,12 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-.home__left, .home__right {
+.home__left,
+.home__right {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center the content vertically if needed */
+  justify-content: center;
+  /* Center the content vertically if needed */
   align-items: center;
 }
 
@@ -400,71 +402,120 @@ img {
 }
 
 /* ===== SKILLS =====*/
-.skills__container {
-  row-gap: 2rem;
-  text-align: center;
+.skills-wrapper {
+  height: 130px;
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin: auto;
+
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-.skills__subtitle {
-  margin-bottom: var(--mb-2);
+.skills-wrapper:before,
+.skills-wrapper:after {
+  content: "";
+  position: absolute;
+  height: 130px;
+  width: 150px;
+  z-index: 2;
+}
+
+.skills-wrapper:after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.skills-wrapper:before {
+  left: 0;
+  top: 0;
+}
+
+.skills-wrapper .skills-track {
+  display: flex;
+  animation: scroll 45s linear infinite;
+  will-change: transform;
+}
+
+.skills-wrapper .skills-track.reverse {
+  animation: scroll-reverse 45s linear infinite;
+}
+
+.skills-wrapper .skills-logo {
+  width: 180px;
+}
+
+.skills-wrapper .skills-logo * {
+  height: 50px;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: var(--second-color);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-180px * 10));
+  }
+}
+
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(calc(-180px * 10));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll100 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100px * 10));
+  }
+}
+
+@keyframes scroll-reverse100 {
+  from {
+    transform: translateX(calc(-100px * 10));
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .skills__text {
-  margin-bottom: var(--mb-4);
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.skills__data {
+/* ===== RESUME =====*/
+.resume-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: .5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: var(--border-rad);
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
-.skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
+.resume-object {
+  display: none;
 }
 
-.skills__names {
-  display: flex;
-  align-items: center;
-}
-
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: .25rem;
-  border-radius: var(--border-rad);
-  z-index: var(--z-back);
-}
-
-.skills__html {
-  width: 95%;
-}
-
-.skills__css {
-  width: 85%;
-}
-
-.skills__js {
-  width: 65%;
-}
-
-.skills__ux {
-  width: 85%;
-}
-
-.skills__img {
-  border-radius: var(--border-rad);
-  box-shadow: 0px 3px 20px rgba(14, 36, 49, 0.15);
+.resume-linktext {
+  display: block;
+  text-align: center;
 }
 
 /* ===== WORK =====*/
@@ -554,7 +605,8 @@ img {
 .category-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Center the content vertically if needed */
+  justify-content: center;
+  /* Center the content vertically if needed */
   align-items: center;
   gap: 30px;
   margin: 0px 1rem 1rem 1rem;
@@ -802,13 +854,13 @@ img {
   }
 
   .category-buttons {
-   gap: 8px;
-   padding-bottom: 0.5rem;
+    gap: 8px;
+    padding-bottom: 0.5rem;
   }
 
   .category-button {
     width: min-content;
-    padding:10px;
+    padding: 10px;
     margin: 0rem 0rem 0rem 0rem;
     font-size: 12px;
   }
@@ -823,31 +875,43 @@ img {
   }
 
   .c-scroll-track {
-    display: block; /* Switch to block layout for vertical alignment */
+    display: block;
+    /* Switch to block layout for vertical alignment */
   }
-  
+
   .c-scrolling-item {
-    width: 100%; /* Make each timeline item take full width */
-    margin-bottom: 20px; /* Add some space between items */
-    display: flex; /* Align items flexibly */
+    width: 100%;
+    /* Make each timeline item take full width */
+    margin-bottom: 20px;
+    /* Add some space between items */
+    display: flex;
+    /* Align items flexibly */
   }
-  
+
   .c-scrolling-line {
-    flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center items horizontally */
-    margin-right: 10px; /* Add some space to the right */
-    display: flex; /* Ensure children are aligned flexibly */
+    flex-direction: column;
+    /* Align items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    margin-right: 10px;
+    /* Add some space to the right */
+    display: flex;
+    /* Ensure children are aligned flexibly */
     flex-shrink: 0;
-  } 
-  
-  .scroll-line {
-    width: 3px; /* Make the line vertical */
-    height: 100%; /* Set a fixed height */
-    flex-grow: 1; /* Allow the line to grow and fill the container */
   }
-  
+
+  .scroll-line {
+    width: 3px;
+    /* Make the line vertical */
+    height: 100%;
+    /* Set a fixed height */
+    flex-grow: 1;
+    /* Allow the line to grow and fill the container */
+  }
+
   .scroll-indicator {
-    margin-bottom: 10px; /* Space between the icon and line */
+    margin-bottom: 10px;
+    /* Space between the icon and line */
     width: 40px;
     height: 40px;
   }
@@ -859,20 +923,24 @@ img {
   .scroll-details {
     font-size: 1rem;
   }
-  
+
   .c-scrolling-details {
-    padding-left: 20px; /* Add padding to the left */
-    text-align: left; /* Align text to the left */
+    padding-left: 20px;
+    /* Add padding to the left */
+    text-align: left;
+    /* Align text to the left */
     padding-top: 0px;
   }
 
   .c-scrolling-item:last-child .c-scrolling-details {
-    padding-bottom: 0px; /* Set padding-bottom to 0px if the parent is the last child */
+    padding-bottom: 0px;
+    /* Set padding-bottom to 0px if the parent is the last child */
   }
-  
+
   .scroll-item-header {
     margin-top: 0;
-    margin-bottom: 5px; /* Space between header and details */
+    margin-bottom: 5px;
+    /* Space between header and details */
   }
 
   .work {
@@ -900,6 +968,27 @@ img {
   .home__subtitle {
     font-size: 3vw;
     font-weight: 600;
+  }
+
+  .about__img {
+    display: none;
+  }
+
+  .skills-wrapper .skills-track {
+    animation: scroll100 40s linear infinite;
+  }
+  
+  .skills-wrapper .skills-track.reverse {
+    animation: scroll-reverse100 40s linear infinite;
+  }
+  
+  .skills-wrapper .skills-logo {
+    width: 100px;
+  }
+  
+  .skills-wrapper .skills-logo * {
+    height: 40px;
+    font-size: 40px;
   }
 }
 
@@ -1032,6 +1121,19 @@ img {
   .work__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .resume-object {
+    display: flex;
+  }
+
+  .resume-linktext {
+    display: none;
+  }
+
+  .skills__text {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
 }
 
 @media screen and (min-width: 968px) {
@@ -1069,6 +1171,10 @@ img {
 
   .c-scroll-track {
     width: 74vw;
+  }
+
+  .resume-object {
+    width: 50%;
   }
 }
 
