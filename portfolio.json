@@ -176,16 +176,16 @@
         "year": "2021"
     },
     {
-        "category": "Production",
-        "title": "Hindsight",
-        "subtitle": "A podcast looking back at the lives of particular students, organizations, and events at Boston University",
-        "img": "/assets/img/portfolio/Hindsight.jpg",
-        "link": "https://www.youtube.com/watch?v=5zAfKaCqoA8",
+        "category": "Business",
+        "title": "Microsoft Manager Interviews",
+        "subtitle": "Interviewed top managers at Microsoft to analyse goal-setting, motivation, and designing successful teams",
+        "img": "/assets/img/portfolio/MicrosoftInterviews.jpg",
+        "link": "/assets/files/MicrosoftInterviews.pdf",
         "year": "2021"
     },
     {
         "category": "Production",
-        "title": "RedBull Valorant Campus Clutch",
+        "title": "RedBull Campus Clutch",
         "subtitle": "Ran a regional Valorant esports tournament qualifier held at BU in partnership with Red Bull and Balance Patch",
         "img": "https://i.ytimg.com/vi/9M53Q96o9Lo/maxresdefault.jpg",
         "link": "https://www.youtube.com/watch?v=9M53Q96o9Lo",
@@ -197,6 +197,14 @@
         "subtitle": "A trailer for the sushi restaurant Katana in Miami, FL",
         "img": "https://i.ytimg.com/vi/PgOK91cK84g/sddefault.jpg",
         "link": "https://www.youtube.com/watch?v=PgOK91cK84g",
+        "year": "2021"
+    },
+    {
+        "category": "Production",
+        "title": "Hindsight",
+        "subtitle": "A podcast looking back at the lives of particular students, organizations, and events at Boston University",
+        "img": "/assets/img/portfolio/Hindsight.jpg",
+        "link": "https://www.youtube.com/watch?v=5zAfKaCqoA8",
         "year": "2021"
     },
     {

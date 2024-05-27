@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (targetSection) {
             const sectionTop = targetSection.offsetTop; // Get the top position of the target section
             window.scrollTo({
-                top: sectionTop - 50,
+                top: sectionTop - 70,
                 behavior: 'smooth' // Optional: Add smooth scrolling
             });
         }

@@ -89,9 +89,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // Update the expand count text
         hiddenCount = filteredProjects.length - unexpandedCount;
         if(hiddenCount > 0) {
+          expandButton.style.display = 'inline';
           expandCount.textContent = "+" + (hiddenCount) + " more...";
         } else {
-         
+          expandButton.style.display = 'none';
           expandCount.textContent = "";
         }
         toggleProjectsDisplay();

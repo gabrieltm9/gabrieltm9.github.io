@@ -16,10 +16,12 @@ class TimelineItem extends HTMLElement {
       </a>
       <div class="scroll-line"></div>
     </div>
-    <div class="c-scrolling-details">
-        <h4 class="scroll-item-header">` + date + `</h4>
-        <div class="scroll-details">` + text + `</div>
-    </div> `;
+    <a href="` + link + `">
+      <div class="c-scrolling-details">
+          <h4 class="scroll-item-header">` + date + `</h4>
+          <div class="scroll-details">` + text + `</div>
+      </div>
+    </a>`;
   }
 }
 
@@ -52,6 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
           timelineElement.setAttribute('link', obj.link);
 
           timelineElement.classList.add('c-scrolling-item'); // Start transition to show the element
+          
+          if (obj.link != "") {
+            timelineElement.classList.add('c-linkhover');
+          } else {
+            timelineElement.style.pointerEvents = "none";
+          }
 
           container.appendChild(timelineElement);
         });
