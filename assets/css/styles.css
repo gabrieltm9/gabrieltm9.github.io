@@ -355,7 +355,7 @@ img {
   object-fit: cover;
   object-position: bottom;
   width: 75% !important;
-  height: 90%;
+  height: 85%;
 }
 
 /*BUTTONS*/
@@ -657,6 +657,7 @@ img {
 
 .expand-count {
   text-align: right;
+  font-style: italic;
 }
 
 #expand-button {
@@ -1040,6 +1041,14 @@ img {
     font-size: 3vw;
     font-weight: 600;
   }
+
+  .expand-count {
+    font-size: small;
+  }
+
+  .expand-container {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1139,14 +1148,14 @@ img {
   }
 
   .work__container {
-    row-gap: 0.5rem;
+    row-gap: 0.7rem;
     column-gap: 0.7rem;
     padding-top: 0.2rem;
   }
 
   .work__itemsubdiv {
     flex-direction: column;
-    padding: 0.2rem 0 0 0;
+    padding: 0.4rem 0 0 0;
   }
 
   .work__date {
@@ -1167,10 +1176,6 @@ img {
 @media screen and (min-width: 768px) {
   .home {
     padding: 4rem 2rem 2rem;
-  }
-
-  .home__img {
-    width: 80% !important;
   }
 
   .section {

@@ -99,7 +99,7 @@ sr.reveal('.home__data', {
     beforeReveal: (el) => el.classList.remove('sr-hidden'),
 });
 sr.reveal('.home__img', { 
-    delay: 400, 
+    delay: 300, 
     beforeReveal: (el) => el.classList.remove('sr-hidden') 
 });
 sr.reveal('.home__social-icon', { 
@@ -107,14 +107,19 @@ sr.reveal('.home__social-icon', {
     beforeReveal: (el) => el.classList.remove('sr-hidden') 
 });
 
+sr.reveal('.about', { 
+    delay: 400, 
+    beforeReveal: (el) => el.classList.remove('sr-hidden'),
+});
+
 sr.reveal('.category-button', { 
-    delay: 1000, 
+    delay: 500, 
     interval: 60, 
     origin: 'bottom', 
     distance: '20px', 
     beforeReveal: (el) => el.classList.remove('sr-hidden') 
 });
+
 sr.reveal('.work__container, .expand-count', { 
-    delay: 300, 
     beforeReveal: (el) => el.classList.remove('sr-hidden'),
 });
