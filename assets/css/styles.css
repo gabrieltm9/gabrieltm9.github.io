@@ -416,7 +416,7 @@ img {
   box-shadow: 0px 3px 20px rgba(14, 36, 49, 0.15);
   width: 200px;
   object-fit: cover;
-  border: 1px solid var(--second-color);
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
 .about__text {
@@ -432,10 +432,10 @@ img {
 .skills__text {
   margin-right: 1rem;
   padding: 1rem;
-  border: 1px solid var(--second-color);
   border-radius: var(--border-rad);
   height: 100%;
   background-color: whitesmoke;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
 .skills__text:last-of-type {
@@ -653,6 +653,10 @@ img {
 .expand-container {
   text-align: center;
   margin-top: 2rem;
+}
+
+.expand-count {
+  text-align: right;
 }
 
 #expand-button {

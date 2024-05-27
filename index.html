@@ -78,60 +78,6 @@
             </section>
         </div>
 
-        <!--===== PORTFOLIO =====-->
-        <script src="/assets/js/components/portfolio.js"></script>
-
-        <section class="work section load-hidden" id="portfolio">
-            <!-- Category Buttons -->
-            <div class="category-buttons">
-                <button class="category-button sr-hidden" data-category="All">All</button>
-                <button class="category-button sr-hidden" data-category="GameDev">Game Dev</button>
-                <button class="category-button sr-hidden" data-category="Software">Software</button>
-                <button class="category-button sr-hidden" data-category="Business">Business</button>
-                <button class="category-button sr-hidden" data-category="Production">Production</button>
-            </div>
-
-            <!-- <div class="category-select-placeholder" style="height: 0;"></div> -->
-            <div class="category-select">
-                <select id="category-select">
-                    <option selected value="All">All</option>
-                    <option value="GameDev">Game Dev</option>
-                    <option value="Software">Software</option>
-                    <option value="Business">Business</option>
-                    <option value="Production">Production</option>
-                </select>
-            </div>
-
-            <div class="work__container bd-grid" id="portfolio-container">
-                <!-- Project showcases will be inserted here by JS -->
-            </div>
-
-            <!-- Expand Button -->
-            <div class="expand-container">
-                <button id="expand-button">Expand</button>
-            </div>
-        </section>
-
-        <!--===== TIMELINE =====-->
-        <script src="/assets/js/components/timeline.js"></script>
-        <div class="timeline-container load-hidden">
-            <div class="section expand" id="timeline">
-                <div class="timeline-container sticky">
-                    <div class="wrapper">
-                        <div class="c-details">
-                            <h2 class="timeline-header section-title">Timeline</h2>
-                        </div>
-                        <div class="c-scrolling-content">
-                            <div class="_w-scrolling-content">
-                                <div class="c-scroll-track" id="timeline-parent">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!--===== ABOUT =====-->
         <section class="about section load-hidden" id="about">
             <h2 class="about__title section-title">About</h2>
@@ -176,7 +122,7 @@
                 <div class="about__row">
                     <img src="assets/img/gtm9_wide.jpg" class="about__img" >
                     <div>
-                        <p class="about__text">Hi!! I'm a trilingual Brazilian super passionate about the intersectionbetween business and technology.
+                        <p class="about__text">I'm a trilingual Brazilian super passionate about the intersection between business and technology.
                             A decade of experience in software programming and multimedia production, particularly in game
                             development and video/broadcast, has given me a customer-centric mindset and engineering skills. 
                             I specialize in bridging the gap between technical and humanistic fields to leverage a team's skillsets as greater than the sum of their parts.
@@ -191,7 +137,7 @@
                 </div>
             </div>
 
-            <div class="skills-wrapper" style="margin-bottom: 8rem;">
+            <div class="skills-wrapper" style="margin-bottom: 4rem;">
                 <div class="skills-track reverse"> <!--===== Programs Carousel =====-->
                     <div class="skills-logo">
                         <i class="devicon-docker-plain"></i>
@@ -226,6 +172,61 @@
                 </div>
             </div>
         </section>
+
+        <!--===== PORTFOLIO =====-->
+        <script src="/assets/js/components/portfolio.js"></script>
+
+        <section class="work section load-hidden" id="portfolio">
+            <!-- Category Buttons -->
+            <div class="category-buttons">
+                <button class="category-button sr-hidden" data-category="All">All</button>
+                <button class="category-button sr-hidden" data-category="GameDev">Game Dev</button>
+                <button class="category-button sr-hidden" data-category="Software">Software</button>
+                <button class="category-button sr-hidden" data-category="Business">Business</button>
+                <button class="category-button sr-hidden" data-category="Production">Production</button>
+            </div>
+
+            <!-- <div class="category-select-placeholder" style="height: 0;"></div> -->
+            <div class="category-select">
+                <select id="category-select">
+                    <option selected value="All">All</option>
+                    <option value="GameDev">Game Dev</option>
+                    <option value="Software">Software</option>
+                    <option value="Business">Business</option>
+                    <option value="Production">Production</option>
+                </select>
+            </div>
+
+            <div class="work__container bd-grid" id="portfolio-container">
+                <!-- Project showcases will be inserted here by JS -->
+            </div>
+            <p class="expand-count bd-grid" id="expand-count">+X more...</p>
+
+            <!-- Expand Button -->
+            <div class="expand-container">
+                <button id="expand-button">Expand</button>
+            </div>
+        </section>
+
+        <!--===== TIMELINE =====-->
+        <script src="/assets/js/components/timeline.js"></script>
+        <div class="timeline-container load-hidden">
+            <div class="section expand" id="timeline">
+                <div class="timeline-container sticky">
+                    <div class="wrapper">
+                        <div class="c-details">
+                            <h2 class="timeline-header section-title">Timeline</h2>
+                        </div>
+                        <div class="c-scrolling-content">
+                            <div class="_w-scrolling-content">
+                                <div class="c-scroll-track" id="timeline-parent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--===== RESUME =====-->
         <section class="resume section load-hidden" id="resume">

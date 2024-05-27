@@ -35,10 +35,12 @@ class PortfolioShowcase extends HTMLElement {
 
 customElements.define('portfolio-showcase', PortfolioShowcase);
 
+var hiddenCount = 0;
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.category-button');
   const container = document.getElementById('portfolio-container');
   const expandButton = document.getElementById('expand-button');
+  const expandCount = document.getElementById('expand-count');
 
   let isExpanded = false;
 
@@ -53,14 +55,17 @@ document.addEventListener('DOMContentLoaded', function () {
         isExpanded = !isExpanded;
         toggleProjectsDisplay();
         expandButton.textContent = isExpanded ? 'Show Less' : 'Expand';
+        expandCount.textContent = isExpanded ? '' : "+" + (hiddenCount) + " more...";
       }, 500); // Adjust the delay to match the scroll duration
     } else {
       isExpanded = !isExpanded;
       toggleProjectsDisplay();
       expandButton.textContent = isExpanded ? 'Show Less' : 'Expand';
+      expandCount.textContent = isExpanded ? '' : "+" + (hiddenCount) + " more...";
     }
   });
 
+  const unexpandedCount = 12;
   function fetchProjects(category) {
     fetch('/portfolio.json')
       .then(response => response.json())
@@ -75,11 +80,20 @@ document.addEventListener('DOMContentLoaded', function () {
           projectElement.setAttribute('img', project.img);
           projectElement.setAttribute('link', project.link);
           projectElement.setAttribute('date', project.year);
-          if (index >= 12) {
+          if (index >= unexpandedCount) {
             projectElement.classList.add('portfolio-hidden');
           }
           container.appendChild(projectElement);
         });
+
+        // Update the expand count text
+        hiddenCount = filteredProjects.length - unexpandedCount;
+        if(hiddenCount > 0) {
+          expandCount.textContent = "+" + (hiddenCount) + " more...";
+        } else {
+         
+          expandCount.textContent = "";
+        }
         toggleProjectsDisplay();
       })
       .then(() => removeAllLoadHidden()) // Remove all load-hidden classes after loading projects

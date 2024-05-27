@@ -114,7 +114,7 @@ sr.reveal('.category-button', {
     distance: '20px', 
     beforeReveal: (el) => el.classList.remove('sr-hidden') 
 });
-sr.reveal('.work__container', { 
+sr.reveal('.work__container, .expand-count', { 
     delay: 300, 
     beforeReveal: (el) => el.classList.remove('sr-hidden'),
 });
