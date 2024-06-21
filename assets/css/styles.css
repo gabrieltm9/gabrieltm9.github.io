@@ -681,6 +681,10 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
+.disclaimer-text {
+  font-style: italic;
+}
+
 
 /* Categories */
 
@@ -1139,6 +1143,10 @@ img {
 
   .expand-container {
     margin-top: 1rem;
+  }
+
+  .disclaimer-text {
+    font-size: small;
   }
 }
 
