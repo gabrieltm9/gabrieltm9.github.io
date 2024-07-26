@@ -19,7 +19,6 @@ class PortfolioShowcase extends HTMLElement {
                         <div class="work__middletext">` + subtitle + `</div>
                     </div>
                 </a>
-                <div
                 <div class="work__itemsubdiv">
                     <div class="work__title">
                         ` + title + `
@@ -47,16 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
   expandButton.addEventListener('click', function () {
     if (isExpanded) {
       const containerTop = container.getBoundingClientRect().top + window.scrollY;
-      // Scroll to the top of the portfolio container with an offset of 100px
       window.scrollBy({ top: containerTop + 410 - window.scrollY, behavior: 'smooth' });
 
-      // Delay the collapsing to ensure smooth scrolling
       setTimeout(() => {
         isExpanded = !isExpanded;
         toggleProjectsDisplay();
         expandButton.textContent = isExpanded ? 'Show Less' : 'Expand';
         expandCount.textContent = isExpanded ? '' : "+" + (hiddenCount) + " more...";
-      }, 500); // Adjust the delay to match the scroll duration
+      }, 500);
     } else {
       isExpanded = !isExpanded;
       toggleProjectsDisplay();
@@ -66,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const unexpandedCount = 12;
+
   function fetchProjects(category) {
     fetch('/portfolio.json')
       .then(response => response.json())
@@ -86,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
           container.appendChild(projectElement);
         });
 
-        // Update the expand count text
         hiddenCount = filteredProjects.length - unexpandedCount;
         if(hiddenCount > 0) {
           expandButton.style.display = 'inline';
@@ -97,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         toggleProjectsDisplay();
       })
-      .then(() => removeAllLoadHidden()) // Remove all load-hidden classes after loading projects
+      .then(() => removeAllLoadHidden())
       .catch(error => console.error('Error loading project data:', error));
   }
 
@@ -131,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-/*===== Remove all load-hidden classes =====*/
 function removeAllLoadHidden() {
   const hiddenElements = document.querySelectorAll('.load-hidden');
   hiddenElements.forEach(element => {
