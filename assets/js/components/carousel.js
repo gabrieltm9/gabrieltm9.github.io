@@ -171,6 +171,7 @@ class Carousel {
       const nextItem2 = this.filteredItems[(this.currentIndex + 2) % this.filteredItems.length];
       const nextItem3 = this.filteredItems[(this.currentIndex + 3) % this.filteredItems.length];
       const nextItem4 = this.filteredItems[(this.currentIndex + 4) % this.filteredItems.length];
+      const nextItem5 = this.filteredItems[(this.currentIndex + 5) % this.filteredItems.length];
 
       if (offsetY < 0) {
           // Swiping up
@@ -179,6 +180,7 @@ class Carousel {
           nextItem2.style.transform = `translate(-50%, calc(-50% + ${offsetY + 2 * this.carousel.clientHeight}px)) scale(0.85)`;
           nextItem3.style.transform = `translate(-50%, calc(-50% + ${offsetY + 3 * this.carousel.clientHeight}px)) scale(0.85)`;
           nextItem4.style.transform = `translate(-50%, calc(-50% + ${offsetY + 4 * this.carousel.clientHeight}px)) scale(0.85)`;
+          nextItem5.style.transform = `translate(-50%, calc(-50% + ${offsetY + 5 * this.carousel.clientHeight}px)) scale(0.85)`;
       } else {
           // Swiping down
           activeItem.style.transform = `translate(-50%, calc(-50% + ${offsetY}px)) scale(1)`;
@@ -186,6 +188,7 @@ class Carousel {
           nextItem2.style.transform = `translate(-50%, calc(-50% + ${offsetY - 2 * this.carousel.clientHeight}px)) scale(0.85)`;
           nextItem3.style.transform = `translate(-50%, calc(-50% + ${offsetY - 3 * this.carousel.clientHeight}px)) scale(0.85)`;
           nextItem4.style.transform = `translate(-50%, calc(-50% + ${offsetY - 4 * this.carousel.clientHeight}px)) scale(0.85)`;
+          nextItem5.style.transform = `translate(-50%, calc(-50% + ${offsetY - 5 * this.carousel.clientHeight}px)) scale(0.85)`;
       }
   }
 
@@ -195,6 +198,7 @@ class Carousel {
       const nextItem2 = this.filteredItems[(this.currentIndex + 2) % this.filteredItems.length];
       const nextItem3 = this.filteredItems[(this.currentIndex + 3) % this.filteredItems.length];
       const nextItem4 = this.filteredItems[(this.currentIndex + 4) % this.filteredItems.length];
+      const nextItem5 = this.filteredItems[(this.currentIndex + 5) % this.filteredItems.length];
 
       this.currentTranslateY = 0;
       this.prevTranslateY = 0;
@@ -223,12 +227,14 @@ class Carousel {
       nextItem2.style.transition = 'transform 0.5s ease';
       nextItem3.style.transition = 'transform 0.5s ease';
       nextItem4.style.transition = 'transform 0.5s ease';
+      nextItem5.style.transition = 'transform 0.5s ease';
 
       activeItem.style.transform = 'translate(-50%, -50%) scale(1)';
-      nextItem.style.transform = `translate(-50%, calc(-50% + 18px)) scale(0.9)`;
-      nextItem2.style.transform = `translate(-50%, calc(-50% + 27px)) scale(0.85)`;
-      nextItem3.style.transform = `translate(-50%, calc(-50% + 36px)) scale(0.8)`;
-      nextItem4.style.transform = `translate(-50%, calc(-50% + 47px)) scale(0.75)`;
+      nextItem.style.transform = `translate(-50%, calc(-50% - 13px)) scale(0.9)`;
+      nextItem2.style.transform = `translate(-50%, calc(-50% - 22px)) scale(0.85)`;
+      nextItem3.style.transform = `translate(-50%, calc(-50% - 31px)) scale(0.8)`;
+      nextItem4.style.transform = `translate(-50%, calc(-50% - 40px)) scale(0.75)`;
+      nextItem5.style.transform = `translate(-50%, calc(-50% - 49px)) scale(0.7)`;
 
       this.updateHeader();
       this.updateCardCount();
@@ -261,7 +267,7 @@ class Carousel {
 
   updateCarousel() {
       this.filteredItems.forEach((item, index) => {
-          item.classList.remove('active', 'previous', 'next', 'next-2', 'next-3', 'next-4');
+          item.classList.remove('active', 'previous', 'next', 'next-2', 'next-3', 'next-4', 'next-5');
           if (index === this.currentIndex) {
               item.classList.add('active');
           } else if (index === (this.currentIndex + 1) % this.filteredItems.length) {
@@ -272,7 +278,9 @@ class Carousel {
               item.classList.add('next-3');
           } else if (index === (this.currentIndex + 4) % this.filteredItems.length) {
               item.classList.add('next-4');
-          }
+          } else if (index === (this.currentIndex + 5) % this.filteredItems.length) {
+              item.classList.add('next-5');
+        }
       });
       this.updateBubbles();
       this.updateCardCount();
@@ -284,12 +292,12 @@ class Carousel {
           .then(response => response.json())
           .then(projects => {
               this.items = projects.map(project => {
-                  const carouselItem = document.createElement('div');
-                  carouselItem.classList.add('carousel-item');
-                  carouselItem.dataset.category = project.category;
-                  carouselItem.dataset.year = project.year; // Add year data attribute
-                  carouselItem.innerHTML = `<a href="${project.link}"><img src="${project.img}" alt="${project.title}"></a>`;
-                  return carouselItem;
+                const carouselItem = document.createElement('div');
+                carouselItem.classList.add('carousel-item');
+                carouselItem.dataset.category = project.category;
+                carouselItem.dataset.year = project.year; // Add year data attribute
+                carouselItem.innerHTML = `<a href="${project.link}"><img src="${project.img}" alt="${project.title}"></a>`;
+                return carouselItem;
               });
               this.items.sort((a, b) => b.dataset.year - a.dataset.year); // Sort by year, most recent first
               this.filterItems(category);
