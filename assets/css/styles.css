@@ -695,7 +695,6 @@ img {
   padding-top: 10vw;
   margin-top: 1rem;
   overflow: hidden;
-  display: none; /* Hide initially, only show on mobile */
 }
 
 .carousel {
@@ -733,8 +732,8 @@ img {
   z-index: 5;
 }
 
-.carousel-item.active img {
-  opacity: 1;
+.carousel-item:active img {
+  filter: brightness(0.8);
 }
 
 .carousel-item.active::after {
@@ -858,6 +857,33 @@ img {
   font-size: 18px; /* Adjust as needed */
   font-family: Arial, sans-serif; /* Adjust as needed */
   color: #000; /* Adjust as needed */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.toggleButton-div {
+  display: flex; 
+  justify-content: end;
+}
+
+#toggleButton {
+  position: relative;
+  cursor: pointer;
+}
+
+
+#toggleButton:active {
+  background-color: rgb(216, 216, 216);
+}
+
+#toggleButton img {
+  padding: 3px 3px;
+  height: 35px;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 /* Categories */
