@@ -563,7 +563,8 @@ img {
 
 .pdf-container {
   position: relative;
-  max-width: 1250px; /* Optional: Set a max width */
+  max-width: 900px; /* Optional: Set a max width */
+  margin: auto;
 }
 
 .pdf-container::before {
