@@ -253,13 +253,8 @@
         <!--===== RESUME =====-->
         <section class="resume section load-hidden" id="resume">
             <h2 class="section-title">Resume</h2>
-            <div class="resume-container">
-                <object type="application/pdf" data="/assets/files/GTM-Resume.pdf" width="90%" height="auto" class="resume-object">
-                    <p style="width: 100%">Unable to load the PDF embed on this browser. <br>No worries, you can <a
-                            href="/assets/files/GTM-Resume.pdf">click here to view the PDF.</a></p>
-                </object>
-                <p class="resume-linktext">It appears you are on mobile!<br>
-                    <a href="/assets/files/GTM-Resume.pdf">Click here to view the PDF.</a></p>
+            <div class="pdf-container bd-grid">
+                <iframe id="pdf-iframe" src="/assets/pdfjs/web/viewer.html?file=/assets/files/GTM-Resume.pdf#zoom=page-fit"></iframe>
             </div>
         </section>
     </main>

@@ -39,7 +39,12 @@ class Carousel {
         this.carousel.addEventListener('mouseup', this.touchEnd.bind(this));
         this.carousel.addEventListener('mousemove', this.touchMove.bind(this));
         this.carousel.addEventListener('mouseleave', this.touchEnd.bind(this));
-        window.addEventListener('resize', this.checkMobileView.bind(this));
+        window.addEventListener('resize', () => {
+            if (window.innerHeight !== this.prevHeight) {
+            this.checkMobileView();
+            this.prevHeight = window.innerHeight;
+            }
+        });
         this.checkMobileView();
     }
   
