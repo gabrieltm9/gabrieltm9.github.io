@@ -1,139 +1,27 @@
 [
     {
         "category": "Software",
-        "title": "Something",
-        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs. Built full stack MVP with React, Express, PostgreSQL, and Azure",
-        "img": "assets/img/portfolio/Something.jpg",
-        "link": "/portfolio/AppDev/Something/Something.html",
-        "year": "2022"
-    },
-    {
-        "category": "GameDev",
-        "title": "Flint",
-        "subtitle": "TSA Game 2015-2016",
-        "img": "/assets/img/portfolio/Flint.png",
-        "link": "https://github.com/PC-TSA/GameFiles2015-2016-MS-",
-        "year": "2015"
-    },
-    { 
-        "category": "Software",
-        "title": "FTC Robotics",
-        "subtitle": "Designed and coded autonomous and manual robotics systems for the FIRST Tech Challenge",
-        "img": "/assets/img/portfolio/CJ.jpg",
-        "link": "https://www.pinecrest.edu/news/2019-02-11/robotics-team-advances-to-state-championship",
-        "year": "2019"
-    },
-    {
-        "category": "Game Dev",
-        "title": "TEDxPineCrestSchool",
-        "subtitle": "Wrote and presented a TEDx talk on what goes into game design to a live audience",
-        "img": "/assets/img/portfolio/TEDx.jpg",
-        "link": "https://www.youtube.com/watch?v=gahcsvMTBhs",
-        "year": "2019"
-    },
-    {
-        "category": "GameDev",
-        "title": "The Miracle Worker",
-        "subtitle": "A psychology themed trivia game created for the Psychology AP class",
-        "img": "/assets/img/portfolio/MiracleWorker.jpg",
-        "link": "https://github.com/gabrieltm9/The-Miracle-Worker",
-        "year": "2019"
+        "title": "Lili",
+        "subtitle": "AI-powered research platform enabling literature summarization, filtering, analysis, and collaboration.",
+        "img": "/assets/img/portfolio/Lili.jpg",
+        "link": "https://www.youtube.com/watch?v=cvuU25gfJyw",
+        "year": "2025"
     },
     {
         "category": "Software",
-        "title": "Minecraft Stat Parser",
-        "subtitle": "Used to pull and display information from Minecraft stat .json files, notably Time Played",
-        "img": "https://images-ext-1.discordapp.net/external/N8T-1BvMgDsk6QoebaBi7yyS9F7ligs_LDtyQlQcE4M/https/opengraph.githubassets.com/da1476f9f46ca031c4627da9089be586dde51bd069154b5918ac2c1bfe9ae18a/gabrieltm9/Minecraft-Stat-Parser?format=webp",
-        "link": "https://github.com/gabrieltm9/Minecraft-Stat-Parser",
-        "year": "2020"
+        "title": "CycleDisplay",
+        "subtitle": "Flask bootstrap app to display weather, stock, and news data. Used with Raspberry Pi.",
+        "img": "/assets/img/portfolio/CycleDisplay.jpg",
+        "link": "https://github.com/gabrieltm9/CycleDisplay",
+        "year": "2025"
     },
     {
-        "category": "Software",
-        "title": "Terra Nova",
-        "subtitle": "Building a better tomorrow through environmental sustainability. Winner of BostonHacks 2020",
-        "img": "/assets/img/portfolio/TerraNova.jpg",
-        "link": "https://devpost.com/software/terra-nova-8is53l",
-        "year": "2020"
-    },
-    {
-        "category": "GameDev",
-        "title": "The Oasis",
-        "subtitle": "A virtual world bringing players together through artistic expression. Winner of BostonHacks MiniHack 2020",
-        "img": "/assets/img/portfolio/Oasis.jpg",
-        "link": "https://devpost.com/software/the-oasis",
-        "year": "2020"
-    },
-    {
-        "category": "Software",
-        "title": "Related Rate Cars",
-        "subtitle": "A related rates car intercept simulator",
-        "img": "/assets/img/portfolio/RRCars.jpg",
-        "link": "https://github.com/gabrieltm9/RelatedRateCars",
-        "year": "2019"
-    },
-    {
-        "category": "Software",
-        "title": "BUCS Server",
-        "subtitle": "Founded and grew the Computer Science Discord server at Boston University to ~2000 members",
-        "img": "/assets/img/portfolio/BUCS.png",
-        "link": "https://discord.gg/uEUureTCmu",
-        "year": "2020"
-    },
-    {
-        "category": "GameDev",
-        "title": "Fringe Contender",
-        "subtitle": "PC-TSA 2017-2018 (Theme: Sports Games)",
-        "img": "/assets/img/portfolio/FC.png",
-        "link": "https://github.com/PC-TSA/GameFiles2017-2018",
-        "year": "2017"
-    },
-    {
-        "category": "GameDev",
-        "title": "Galactic Gauntlet",
-        "subtitle": "TSA Game 2016-2017 (Theme: Arcade)",
-        "img": "/assets/img/portfolio/GG.jpg",
-        "link": "https://github.com/PC-TSA/GameFiles2016-2017",
-        "year": "2016"
-    },
-    {
-        "category": "Production",
-        "title": "Living Wall",
-        "subtitle": "TSA 3D Animation 2018-2019",
-        "img": "/assets/img/portfolio/3DAnim2018.jpg",
-        "link": "/assets/files/3DAnim2018.mp4",
-        "year": "2018"
-    },
-    {
-        "category": "GameDev",
-        "title": "Legacy",
-        "subtitle": "TSA Game 2018-2019 (Theme: RPG that is TSA themed)",
-        "img": "/assets/img/portfolio/Legacy.jpg",
-        "link": "https://github.com/PC-TSA/GameFiles2018-2019",
-        "year": "2018"
-    },
-    {
-        "category": "GameDev",
-        "title": "Tritonal",
-        "subtitle": "TSA Game 2019-2020 (Theme: Sporting game centered around the 2020 Olympics)",
-        "img": "/assets/img/portfolio/Tritonal.jpg",
-        "link": "https://github.com/PC-TSA/GameFiles2019-2020",
-        "year": "2019"
-    },
-    {
-        "category": "Production",
-        "title": "Anthropocene",
-        "subtitle": "TSA 3D Animation 2019-2020 (Theme: Impact of humans on the environment)",
-        "img": "/assets/img/portfolio/3DAnim2019.jpg",
-        "link": "https://youtu.be/SUQ_t5IoNt0",
-        "year": "2019"
-    },
-    {
-        "category": "Production",
-        "title": "Drones",
-        "subtitle": "SciVis 2019-2020",
-        "img": "/assets/img/portfolio/SciVis2019.jpg",
-        "link": "https://youtu.be/uWWIGN9INKY",
-        "year": "2019"
+        "category": "Business",
+        "title": "PFG Consulting Analysis",
+        "subtitle": "Analysed the grocery wholesaler industry to provide consulting recommendations to client Performance Food Group",
+        "img": "/assets/img/portfolio/PFG.jpg",
+        "link": "/assets/files/PFG.pdf",
+        "year": "2024"
     },
     {
         "category": "Business",
@@ -152,12 +40,36 @@
         "year": "2023"
     },
     {
-        "category": "Production",
-        "title": "Patent Pending",
-        "subtitle": "A podcast interviewing the student leaders of at Pine Crest 2020",
-        "img": "/assets/img/portfolio/PatentPending.jpg",
-        "link": "https://podcasters.spotify.com/pod/show/gabrieltm9",
-        "year": "2020"
+        "category": "Business",
+        "title": "Space & Defense Analysis",
+        "subtitle": "Created data-driven framework to compare S&D companies in APAC for fit with RGP's services",
+        "img": "/assets/img/portfolio/RGPS&D.jpg",
+        "link": "/assets/files/RGPS&D.pdf",
+        "year": "2023"
+    },
+    {
+        "category": "Business",
+        "title": "C-Suite Buyer Personas",
+        "subtitle": "Created c-suite buyer personas based on holistic analysis of major RGP clients",
+        "img": "/assets/img/portfolio/RGPPersonas.jpg",
+        "link": "/assets/files/RGPBuyerPersonas2023.pdf",
+        "year": "2023"
+    },
+    {
+        "category": "Software",
+        "title": "Something",
+        "subtitle": "Co-founded ad-based charity startup with UT Austin entrepreneurs. Built full stack MVP with React, Express, PostgreSQL, and Azure",
+        "img": "assets/img/portfolio/Something.jpg",
+        "link": "https://www.linkedin.com/in/gmoncau/overlay/projects/195419362/multiple-media-viewer/?profileId=ACoAAC5Um-cB2NXrlXv_s2oa9qx6OkmvIvKagI0&treasuryMediaId=1709592403332",
+        "year": "2022"
+    },
+    {
+        "category": "Business",
+        "title": "Fifth Dimension",
+        "subtitle": "A business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service",
+        "img": "/assets/img/portfolio/FifthDimension.png",
+        "link": "/assets/files/FifthDimension.pdf",
+        "year": "2022"
     },
     {
         "category": "Production",
@@ -208,35 +120,139 @@
         "year": "2021"
     },
     {
-        "category": "Business",
-        "title": "Space & Defense Analysis",
-        "subtitle": "Created data-driven framework to compare S&D companies in APAC for fit with RGP's services",
-        "img": "/assets/img/portfolio/RGPS&D.jpg",
-        "link": "/assets/files/RGPS&D.pdf",
-        "year": "2023"
+        "category": "Software",
+        "title": "Minecraft Stat Parser",
+        "subtitle": "Used to pull and display information from Minecraft stat .json files, notably Time Played",
+        "img": "https://images-ext-1.discordapp.net/external/N8T-1BvMgDsk6QoebaBi7yyS9F7ligs_LDtyQlQcE4M/https/opengraph.githubassets.com/da1476f9f46ca031c4627da9089be586dde51bd069154b5918ac2c1bfe9ae18a/gabrieltm9/Minecraft-Stat-Parser?format=webp",
+        "link": "https://github.com/gabrieltm9/Minecraft-Stat-Parser",
+        "year": "2020"
     },
     {
-        "category": "Business",
-        "title": "C-Suite Buyer Personas",
-        "subtitle": "Created c-suite buyer personas based on holistic analysis of major RGP clients",
-        "img": "/assets/img/portfolio/RGPPersonas.jpg",
-        "link": "/assets/files/RGPBuyerPersonas2023.pdf",
-        "year": "2023"
+        "category": "Software",
+        "title": "Terra Nova",
+        "subtitle": "Building a better tomorrow through environmental sustainability. Winner of BostonHacks 2020",
+        "img": "/assets/img/portfolio/TerraNova.jpg",
+        "link": "https://devpost.com/software/terra-nova-8is53l",
+        "year": "2020"
     },
     {
-        "category": "Business",
-        "title": "Fifth Dimension",
-        "subtitle": "A business plan across operations, marketing, finance, and analytics for a virtual reality entertainment service",
-        "img": "/assets/img/portfolio/FifthDimension.png",
-        "link": "/assets/files/FifthDimension.pdf",
-        "year": "2022"
+        "category": "GameDev",
+        "title": "The Oasis",
+        "subtitle": "A virtual world bringing players together through artistic expression. Winner of BostonHacks MiniHack 2020",
+        "img": "/assets/img/portfolio/Oasis.jpg",
+        "link": "https://devpost.com/software/the-oasis",
+        "year": "2020"
     },
     {
-        "category": "Business",
-        "title": "PFG Consulting Analysis",
-        "subtitle": "Analysed the grocery wholesaler industry to provide consulting recommendations to client Performance Food Group",
-        "img": "/assets/img/portfolio/PFG.jpg",
-        "link": "/assets/files/PFG.pdf",
-        "year": "2024"
+        "category": "Software",
+        "title": "BUCS Server",
+        "subtitle": "Founded and grew the Computer Science Discord server at Boston University to ~2000 members",
+        "img": "/assets/img/portfolio/BUCS.png",
+        "link": "https://discord.gg/uEUureTCmu",
+        "year": "2020"
+    },
+    {
+        "category": "Production",
+        "title": "Patent Pending",
+        "subtitle": "A podcast interviewing the student leaders of at Pine Crest 2020",
+        "img": "/assets/img/portfolio/PatentPending.jpg",
+        "link": "https://podcasters.spotify.com/pod/show/gabrieltm9",
+        "year": "2020"
+    },
+    {
+        "category": "Software",
+        "title": "FTC Robotics",
+        "subtitle": "Designed and coded autonomous and manual robotics systems for the FIRST Tech Challenge",
+        "img": "/assets/img/portfolio/CJ.jpg",
+        "link": "https://www.pinecrest.edu/news/2019-02-11/robotics-team-advances-to-state-championship",
+        "year": "2019"
+    },
+    {
+        "category": "Game Dev",
+        "title": "TEDxPineCrestSchool",
+        "subtitle": "Wrote and presented a TEDx talk on what goes into game design to a live audience",
+        "img": "/assets/img/portfolio/TEDx.jpg",
+        "link": "https://www.youtube.com/watch?v=gahcsvMTBhs",
+        "year": "2019"
+    },
+    {
+        "category": "GameDev",
+        "title": "The Miracle Worker",
+        "subtitle": "A psychology themed trivia game created for the Psychology AP class",
+        "img": "/assets/img/portfolio/MiracleWorker.jpg",
+        "link": "https://github.com/gabrieltm9/The-Miracle-Worker",
+        "year": "2019"
+    },
+    {
+        "category": "Software",
+        "title": "Related Rate Cars",
+        "subtitle": "A related rates car intercept simulator",
+        "img": "/assets/img/portfolio/RRCars.jpg",
+        "link": "https://github.com/gabrieltm9/RelatedRateCars",
+        "year": "2019"
+    },
+    {
+        "category": "GameDev",
+        "title": "Tritonal",
+        "subtitle": "TSA Game 2019-2020 (Theme: Sporting game centered around the 2020 Olympics)",
+        "img": "/assets/img/portfolio/Tritonal.jpg",
+        "link": "https://github.com/PC-TSA/GameFiles2019-2020",
+        "year": "2019"
+    },
+    {
+        "category": "Production",
+        "title": "Anthropocene",
+        "subtitle": "TSA 3D Animation 2019-2020 (Theme: Impact of humans on the environment)",
+        "img": "/assets/img/portfolio/3DAnim2019.jpg",
+        "link": "https://youtu.be/SUQ_t5IoNt0",
+        "year": "2019"
+    },
+    {
+        "category": "Production",
+        "title": "Drones",
+        "subtitle": "SciVis 2019-2020",
+        "img": "/assets/img/portfolio/SciVis2019.jpg",
+        "link": "https://youtu.be/uWWIGN9INKY",
+        "year": "2019"
+    },
+    {
+        "category": "Production",
+        "title": "Living Wall",
+        "subtitle": "TSA 3D Animation 2018-2019",
+        "img": "/assets/img/portfolio/3DAnim2018.jpg",
+        "link": "/assets/files/3DAnim2018.mp4",
+        "year": "2018"
+    },
+    {
+        "category": "GameDev",
+        "title": "Legacy",
+        "subtitle": "TSA Game 2018-2019 (Theme: RPG that is TSA themed)",
+        "img": "/assets/img/portfolio/Legacy.jpg",
+        "link": "https://github.com/PC-TSA/GameFiles2018-2019",
+        "year": "2018"
+    },
+    {
+        "category": "GameDev",
+        "title": "Fringe Contender",
+        "subtitle": "PC-TSA 2017-2018 (Theme: Sports Games)",
+        "img": "/assets/img/portfolio/FC.png",
+        "link": "https://github.com/PC-TSA/GameFiles2017-2018",
+        "year": "2017"
+    },
+    {
+        "category": "GameDev",
+        "title": "Galactic Gauntlet",
+        "subtitle": "TSA Game 2016-2017 (Theme: Arcade)",
+        "img": "/assets/img/portfolio/GG.jpg",
+        "link": "https://github.com/PC-TSA/GameFiles2016-2017",
+        "year": "2016"
+    },
+    {
+        "category": "GameDev",
+        "title": "Flint",
+        "subtitle": "TSA Game 2015-2016",
+        "img": "/assets/img/portfolio/Flint.png",
+        "link": "https://github.com/PC-TSA/GameFiles2015-2016-MS-",
+        "year": "2015"
     }
 ]
